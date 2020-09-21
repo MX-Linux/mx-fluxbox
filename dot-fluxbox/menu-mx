@@ -1,5 +1,4 @@
 [begin] (Fluxbox)
-	[exec] (About) {about-mx-fluxbox}
 	[exec] (All Apps) {rofi -show drun}
     [exec] (Browser) {firefox}
     [exec] (Email) {thunderbird}
@@ -35,6 +34,7 @@
         [end]
     [end]
     [submenu] (Settings)
+        [exec] (About) {about-mx-fluxbox}
         [submenu] (Configure)
             [exec] (Apps) {xdg-open ~/.fluxbox/apps}
             [exec] (Init) {xdg-open ~/.fluxbox/init}
