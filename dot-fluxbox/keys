@@ -1,4 +1,22 @@
 ----------
+***Borrowing from Flaxx keys file***
+
+----------# Special keywords :
+#
+#   Shift   = Shift                Mouse1  = Left Mouse Button
+#   Control = Control              Mouse2  = Middle Mouse Button
+#   Mod4    = Windows Key (Left)   Mouse3  = Right Mouse Button
+#   Mod1    = Alt key              Mouse4  = Mouse Wheel Up
+#   Menu    = Windows Key (Right)  Mouse5  = Mouse Wheel Down
+#                                  Mouse6  = Mouse Button #6
+#                                  Mouse7  = Mouse Button #7
+#
+#   OnToolbar = mouse is on toolbar
+#   OnDesktop = mouse is on desktop
+#   OnTitlebar= mouse is on window's titlebar
+
+***End of borrowing###
+
 ----------
 ## MXflux additions ##
 

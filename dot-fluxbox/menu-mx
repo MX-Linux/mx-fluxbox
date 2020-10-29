@@ -8,58 +8,8 @@
     [exec] (Run ) {rofi -show run} 
     [exec] (Terminal) {xfce4-terminal} 
     [separator]
-    [submenu] (Appearance) 
-        [exec] (Conky){conky-manager2}
-        [submenu] (Docks)
-            [exec] (Default) {~/.fluxbox/scripts/DefaultDock.mxdk}
-            [separator]
-            [exec] (Dockmaker) {mx-dockmaker}
-        [end]
-        [exec] (Desktop icons) {mx-idesktool}
-        [exec] (Monitors) {gkrellm}
-        [submenu] (Style)
-            [stylesdir] (~/.fluxbox/styles)
-            [separator]
-            [stylesdir] (/usr/share/fluxbox/styles) 
-        [end]
-        [exec] (Theme) {lxappearance}
-        [submenu] (Toolbar)
-            [exec] (Fluxbox) {toggletint2}
-            [exec] (Traditional) {toggletint2}
-        [end]
-        [submenu] (Wallpaper)
-            [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
-            [separator]
-            [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
-        [end]
-    [end]
-    [submenu] (Settings)
-        [exec] (About) {about-mx-fluxbox}
-        [submenu] (Configure)
-            [exec] (Apps) {xdg-open ~/.fluxbox/apps}
-            [exec] (Init) {xdg-open ~/.fluxbox/init}
-            [exec] (Keys) {xdg-open ~/.fluxbox/keys}
-            [exec] (Menu) {xdg-open ~/.fluxbox/menu-mx}
-            [exec] (Overlay) {xdg-open ~/.fluxbox/overlay}
-            [exec] (Startup) {featherpad ~/.fluxbox/startup}
-            [exec] (Styles) {thunar ~/.fluxbox/styles/}
-        [end]
-        [submenu] (Keyboard)
-            [exec] (DE) {setxkbmap de}
-			[exec] (ES) {setxkbmap es} 
-	        [exec] (FR) {setxkbmap fr}
-		    [exec] (GB) {setxkbmap gb}
-		    [exec] (GR) {setxkbmap gr}
-	        [exec] (JA) {setxkbmap ja}
-   	        [exec] (IT) {setxkbmap it}
-			[exec] (PL) {setxkbmap pl}
-			[exec] (PT) {setxkbmap pt}
-			[exec] (RU) {setxkbmap ru}
-			[exec] (US) {setxkbmap us}
-        [end]
-        [config] (Fluxbox)
-        [exec] (Xfce) {xfce4-settings-manager}
-    [end] 
+    [include] (~/.fluxbox/menu-appearance)
+    [include] (~/.fluxbox/menu-settings)
     [separator]
     [submenu] (Out of sight)
         [include] (/usr/share/mxflux/menu/out-of-sight)
