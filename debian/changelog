@@ -1,11 +1,12 @@
-mx-fluxbox (23.05.06mx23+nmu3) UNRELEASED; urgency=medium
+mx-fluxbox (23.05.06mx23+nmu4) UNRELEASED; urgency=medium
 
   * Non-maintainer upload.
   * Corrected weather command
   * multiple small changes: font, defaultdock, etc.
   * more small changes: appfinder rofi, etc.
+  * added screensaver to startup
 
- -- Jerry <jb@mx>  Tue, 23 May 2023 20:55:35 -0400
+ -- Jerry <jb@mx>  Wed, 24 May 2023 14:40:15 -0400
 
 mx-fluxbox (23.05.06mx23) mx; urgency=medium
 

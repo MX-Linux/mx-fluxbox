@@ -30,6 +30,9 @@ xdg-user-dirs-gtk-update
 #start a compositor if using complicated conkies
 #compton &
 
+#set number of seconds before inactive screen turns off
+xset -dpms && xset s 180
+
 #add system monitors 
 #gkrellm &
 
