@@ -87,17 +87,28 @@ OnDesktop Mouse5 :NextWorkspace
 
 # alt + left/right click to move/resize a window
 OnWindow Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnTitlebar Mod1 Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
 OnWindowBorder Move1 :StartMoving
 
 OnWindow Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
+OnTitlebar Mod1 Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
 OnLeftGrip Move1 :StartResizing bottomleft
 OnRightGrip Move1 :StartResizing bottomright
 
 # control-click a window's titlebar and drag to attach windows
 OnTitlebar Control Mouse1 :StartTabbing
+# middle drag a window's titlebar and drag to attach windows
+OnTitlebar Mouse2 :StartTabbing
 
 # double click on the titlebar to shade/unshade
-OnTitlebar Double Mouse1 :Shade
+#OnTitlebar Double Mouse1 :Shade
+
+# double click on the titlebar to maximize
+OnTitlebar Double Mouse1 :Maximize
+
+# middle scroll on the titlebar to toggle shade or unshade
+OnTitlebar Mouse4 :ShadeOn
+OnTitlebar Mouse5 :ShadeOff
 
 # left click on the titlebar to move the window
 OnTitlebar Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
