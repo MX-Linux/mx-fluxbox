@@ -385,7 +385,7 @@ case $ret in
 		
 	if [ "$WINKEYNEW" != "$WINKEYOLD" ]; then
         sed -i -e "s/${WINKEYOLD}/${WINKEYNEW}/g" $HOME/.fluxbox/keys
-        fluxbox-remote restart
+        fluxbox-remote reconfigure
     fi
     
 ###################################################################
