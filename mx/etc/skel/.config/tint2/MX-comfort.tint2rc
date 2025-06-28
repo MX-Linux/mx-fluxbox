@@ -277,7 +277,7 @@ separator_padding = 1 0
 #-------------------------------------
 # Button 1
 button = new
-button_icon = /usr/share/icons/mxfcelogo-rounded.png
+button_icon = /usr/share/mxflux/tint2/mx-logo.svg
 button_text = 
 button_tooltip = App Finder
 button_lclick_command = rofi -show drun -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi

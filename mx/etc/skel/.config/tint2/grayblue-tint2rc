@@ -366,7 +366,7 @@ button_max_icon_size = 48
 #-------------------------------------
 # Button 2
 button = new
-button_icon = /usr/share/icons/mxfcelogo-rounded.png
+button_icon = /usr/share/mxflux/tint2/mx-logo.svg
 button_text = 
 button_lclick_command = rofi -show drun -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi
 button_rclick_command = appfinder-settings
