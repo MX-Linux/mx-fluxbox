@@ -1,15 +1,19 @@
 ! The following line will prevent styles from setting the background.
 background: none
 
-#Example settings for font name, size, etc., for menu and toolbar
+#Toolbar font settings
 
-#toolbar.clock.font: Sans-12:bold
-#toolbar.workspace.font: Sans-11:regular
-#toolbar.iconbar.focused.font: Sans-11:regular
-#toolbar.iconbar.unfocused.font: Sans-11:regular
-#window.font: Sans-11:bold
-#menu.title.font: Sans-11:regular
-#menu.frame.font: Sans-11:italic
+toolbar.button.font: FontAwesome-14:Regular
+toolbar.clock.font: Liberation Sans-12:Bold
+toolbar.workspace.font: Liberation Sans-11:Regular
+toolbar.iconbar.focused.font: Liberation Sans-11:Regular
+toolbar.iconbar.unfocused.font: Liberation Sans-11:Regular
+
+#Example settings for font name, size, etc., for menu
+
+#window.font: Liberation Sans-11:Bold
+#menu.title.font: Liberation Sans-11:Bold
+#menu.frame.font: Liberation Sans-11:Regular
 
 # double menu width
 menu.bevelWidth: 2

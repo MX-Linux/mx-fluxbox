@@ -26,17 +26,28 @@ session.screen0.workspacewarpinghorizontaloffset:	1
 session.screen0.workspacewarpingverticaloffset:	1
 
 ### TOOLBAR ###
-#toggled-off#session.screen0.toolbar.tools:	workspacename, iconbar, systemtray, clock
-session.screen0.toolbar.tools:	workspacename, iconbar, clock
-session.screen0.toolbar.maxOver:	false
-session.screen0.toolbar.alpha:	252
-session.screen0.toolbar.placement:	TopCenter
-session.screen0.toolbar.layer:	Dock
-session.screen0.toolbar.widthPercent:	66
+session.screen0.toolbar.tools:	button.appfinder, button.rootmenu, button.tools, button.files, button.browser, NextWorkspace, workspacename, iconbar, systemtray, clock, button.exitoptions
+session.screen0.toolbar.button.appfinder.label:	\357\200\202
+session.screen0.toolbar.button.appfinder.commands:	:exec rofi -show drun -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi : :exec appfinder-settings
+session.screen0.toolbar.button.tools.label:	\357\202\255
+session.screen0.toolbar.button.tools.commands:	exec custom-toolbox /etc/custom-toolbox/mxfb-settings.list
+session.screen0.toolbar.button.rootmenu.label:	\357\203\211
+session.screen0.toolbar.button.rootmenu.commands:	RootMenu
+session.screen0.toolbar.button.files.label:	\357\201\273
+session.screen0.toolbar.button.files.commands:	exec exo-open $HOME
+session.screen0.toolbar.button.browser.label:	\357\202\254
+session.screen0.toolbar.button.browser.commands:	exec sensible-browser
+session.screen0.toolbar.button.exitoptions.label:	\357\200\221
+session.screen0.toolbar.button.exitoptions.commands:	:exec exit-options : :exec exit-options-manager
+session.screen0.toolbar.maxOver: false
+session.screen0.toolbar.alpha: 255
+session.screen0.toolbar.placement: TopCenter
+session.screen0.toolbar.layer: Dock
+session.screen0.toolbar.widthPercent: 100
 session.screen0.toolbar.onhead:	1
 session.screen0.toolbar.height:	30
-session.screen0.toolbar.autoHide:	false
-session.screen0.toolbar.visible:	false
+session.screen0.toolbar.autoHide: false
+session.screen0.toolbar.visible: false
 session.screen0.strftimeFormat:	%I:%M  %b %d
 session.screen0.toolbar.autoRaise:	false
 
@@ -62,11 +73,11 @@ session.tabsAttachArea:	Window
 session.tabPadding:	0
 
 ### ICONBAR ###
-session.screen0.iconbar.alignment:	Relative
-session.screen0.iconbar.mode:	{static groups}
-session.screen0.iconbar.iconTextPadding:	10
+session.screen0.iconbar.alignment: Left
+session.screen0.iconbar.mode:	{static groups} (workspace)
+session.screen0.iconbar.iconTextPadding: 10
 session.screen0.iconbar.usePixmap:	true
-session.screen0.iconbar.iconWidth:	128
+session.screen0.iconbar.iconWidth:	196
 session.screen0.tooltipDelay:	500
 session.screen0.iconbar.iconifiedPattern:	Left
 
@@ -81,7 +92,7 @@ session.menuFile:	~/.fluxbox/menu-mx
 session.keyFile:	~/.fluxbox/keys
 session.styleOverlay:	~/.fluxbox/overlay
 session.appsFile:	~/.fluxbox/apps
-session.styleFile:	/usr/share/mxflux/styles/MX-comfort
+session.styleFile:	/usr/share/mxflux/styles/MX-ease-dark
 
 ### MISCELLANEOUS ###
 session.screen0.focusSameHead:	false
