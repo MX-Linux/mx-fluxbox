@@ -65,7 +65,7 @@ session.slitlistFile:	~/.fluxbox/slitlist
 ### TABS ###
 session.screen0.tab.placement:	TopLeft
 session.screen0.tab.width:	64
-session.screen0.tabs.usePixmap:	true
+session.screen0.tabs.usePixmap:	false
 session.screen0.tabs.maxOver:	false
 session.screen0.tabs.intitlebar:	true
 session.screen0.tabFocusModel:	ClickToTabFocus
