@@ -92,7 +92,7 @@ session.menuFile:	~/.fluxbox/menu-mx
 session.keyFile:	~/.fluxbox/keys
 session.styleOverlay:	~/.fluxbox/overlay
 session.appsFile:	~/.fluxbox/apps
-session.styleFile:	/usr/share/mxflux/styles/MX-ease-dark
+session.styleFile:	/usr/share/mxflux/styles/MX-ease-Dark
 
 ### MISCELLANEOUS ###
 session.screen0.focusSameHead:	false

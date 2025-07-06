@@ -3,7 +3,7 @@
 
 include ".gtkrc-2.0-mine"
 gtk-theme-name="mx-comfort"
-gtk-icon-theme-name="Papirus-mxblue-darkpanes"
+gtk-icon-theme-name="Papirus-mxblue"
 gtk-font-name="Sans 11"
 gtk-cursor-theme-name="DMZ-Black"
 gtk-cursor-theme-size=0
