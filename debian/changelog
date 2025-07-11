@@ -1,3 +1,10 @@
+mx-fluxbox (25.07.02mx25+nmu1) UNRELEASED; urgency=medium
+
+  * Non-maintainer upload.
+  * Bump up mxfb-version
+
+ -- Dolphin Oracle <devs@mx>  Fri, 11 Jul 2025 06:51:37 -0400
+
 mx-fluxbox (25.07.02mx25) mx; urgency=medium
 
   * Update skel
