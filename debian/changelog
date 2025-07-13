@@ -1,4 +1,4 @@
-mx-fluxbox (25.07.02mx25+nmu1) mx; urgency=medium
+mx-fluxbox (25.07.03mx25) mx; urgency=medium
 
   * adjust control file depends on mx-fluxbox metapackage
   * add grsync and exit-options to postinstall routine
