@@ -15,6 +15,8 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
         rofi-calc \
         mx-fluxbox-about \
         mx-rofi-manager \
+        grsync \
+        exit-options \
         tint2 || :
 fi
 
