@@ -2,8 +2,8 @@
 
 #start conky
 if [ -n "$(grep "Hidden=false" "$HOME/.config/autostart/conky.desktop")" ]; then
-      if [ -f "$HOME/.conky/conky-startup.sh" ]; then
-           sh "$HOME/.conky/conky-startup.sh" &
+      if [ -f "/usr/share/mx-conky-data/conky-startup.sh" ]; then
+           /usr/share/mx-conky-data/conky-startup.sh
       fi
 fi
 
