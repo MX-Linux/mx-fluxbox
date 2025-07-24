@@ -1,3 +1,10 @@
+mx-fluxbox (25.07.04mx25) mx; urgency=medium
+
+  * adjust the way conkystart works
+  * better integration with mx-conky setup
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 24 Jul 2025 18:43:43 -0400
+
 mx-fluxbox (25.07.03mx25) mx; urgency=medium
 
   * adjust control file depends on mx-fluxbox metapackage

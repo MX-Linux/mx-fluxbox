@@ -1,9 +1,16 @@
 #!/bin/bash
 
 #start conky
-if [ -n "$(grep "Hidden=false" "$HOME/.config/autostart/conky.desktop")" ]; then
+#autostart if the desktop autostart file is present and enabled
+autostart="$HOME/.config/autostart/conky.desktop"
+if [ -e "$autostart" ]; then
+	if [ -z "$(grep "Hidden=true" "$autostart")" ]; then
       if [ -f "/usr/share/mx-conky-data/conky-startup.sh" ]; then
-           /usr/share/mx-conky-data/conky-startup.sh
-      fi
+           /usr/share/mx-conky-data/conky-startup.sh &
+      else 
+      	if [ -f "$HOME/.conky/conky-startup.sh" ]; then
+      		sh "$HOME/.conky/conky-startup.sh &"
+	  	fi
+	  fi
+    fi
 fi
-
