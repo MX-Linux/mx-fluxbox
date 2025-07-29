@@ -1,5 +1,5 @@
 [begin] (Appearance) 
-    [exec] (Conky){conky-manager2}
+    [exec] (Conky){mx-conky}
     [submenu] (Docks)
         [exec] (Default) {~/.fluxbox/scripts/DefaultDock.mxdk}
         [exec] (Tint2) {mxfb-tint2-manager}
