@@ -1,3 +1,9 @@
+mx-fluxbox (25.07.05mx25) mx; urgency=medium
+
+  * update menus for mx-conky
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 29 Jul 2025 21:35:49 -0400
+
 mx-fluxbox (25.07.04mx25) mx; urgency=medium
 
   * adjust the way conkystart works
