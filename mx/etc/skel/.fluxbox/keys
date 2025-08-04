@@ -84,28 +84,39 @@ OnDesktop Mouse3 :RootMenu
 OnDesktop Mouse4 :PrevWorkspace
 OnDesktop Mouse5 :NextWorkspace
 
-# alt + left/right click to move/resize a window
+# alt + mouse left button drag to move a window
 OnWindow Alt Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
+OnTitlebar Alt Mouse1 :MacroCmd {Raise} {Focus} {StartMoving}
 OnWindowBorder Move1 :StartMoving
 
+# alt + mouse right button drag to resize a window
 OnWindow Alt Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
+OnTitlebar Alt Mouse3 :MacroCmd {Raise} {Focus} {StartResizing NearestCorner}
 OnLeftGrip Move1 :StartResizing bottomleft
 OnRightGrip Move1 :StartResizing bottomright
 
-# Ctrl-click a window's titlebar and drag to attach windows
-OnTitlebar Ctrl Mouse1 :StartTabbing
+# ctrl + mouse left button drag a window's titlebar and drag to attach windows
+OnTitlebar Control Mouse1 :StartTabbing
 
-# double click on the titlebar to shade/unshade
-OnTitlebar Double Mouse1 :Shade
+# mouse middle button drag a window's titlebar and drag to attach windows
+OnTitlebar Mouse2 :StartTabbing
 
-# left click on the titlebar to move the window
+# mouse left button double click on the titlebar to maximize window
+OnTitlebar Double Mouse1 :Maximize
+
+# mouse middle button scroll on the titlebar to toggle shade or unshade
+OnTitlebar Mouse4 :ShadeOn
+OnTitlebar Mouse5 :ShadeOff
+
+# mouse left button drag on the titlebar to move the window
 OnTitlebar Mouse1 :MacroCmd {Raise} {Focus} {ActivateTab}
 OnTitlebar Move1  :StartMoving
 
-# see a menu of window options
+# mouse right button click to see a menu of window options
 OnTitlebar Mouse3 :WindowMenu
-   #for apps using CSD try this instead
-   #OnWindow Mouse2 :WindowMenu
+
+#for apps using CSD try this instead
+#OnWindow Mouse2 :WindowMenu
 
 # alt-tab
 Alt Tab :NextWindow {groups} (workspace=[current])
