@@ -1,3 +1,10 @@
+mx-fluxbox (25.07.06mx25) mx; urgency=medium
+
+  * Non-maintainer upload.
+  * Removed systemtray in mx init
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sat, 16 Aug 2025 15:44:33 -0400
+
 mx-fluxbox (25.07.05mx25) mx; urgency=medium
 
   * update menus for mx-conky
