@@ -1,0 +1,52 @@
+* {
+	background-color: transparent;
+	
+    // Title background
+    color01: #29353B;
+    // Title text
+    color02: #CACDD0;
+    // Searchbar background
+    color03: #C0C6CA;
+    // Searchbar text
+    color04: #29353B;
+    // Inctive tab background
+    color05: #C0C6CA;
+    // Inctive tab text
+    color06: #29353B;
+    // Active tab background
+    color07: #C0C6CA;
+    // Active tab text
+    color08: #ffffff;
+    // Active tab highlight
+    color09: #0f56d9;
+    // Selection background
+    color10: #0f56d9;
+    // Selection text 
+    color11: #424242;
+   }	
+	
+listview {
+    background-color: @color05;
+}
+   
+element {
+    background-color: @color05;
+    padding: 6;
+    text-color: @color06;
+}
+
+element selected {
+        border:			0px;
+        text-color: @color08;
+}
+
+button {
+        text-color:       @color02;
+}
+
+button selected {
+        background-color: @color09;
+        text-color:       @color08;
+        border:           0px;
+}
+
