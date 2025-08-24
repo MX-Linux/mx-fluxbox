@@ -261,7 +261,7 @@ button_icon = /usr/share/mxflux/tint2/wrench1600_white.png
 button_text = 
 button_tooltip = Settings Manager
 button_lclick_command = custom-toolbox /etc/custom-toolbox/mxfb-settings.list
-button_rclick_command = 
+button_rclick_command = mx-tools
 ### ???? button_mclick_command = tint2 taskbar autohide = 1
 button_uwheel_command = 
 button_dwheel_command = 
