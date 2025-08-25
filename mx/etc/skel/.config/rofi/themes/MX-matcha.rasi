@@ -1,0 +1,129 @@
+/**
+ * ROFI Color theme by Melber & MX-Devs
+ */
+
+* {
+    // MX-matcha
+    // uses flag-for-font-awesome
+    // mxrr template-matcha.rasi
+    font: "Noto Sans 12";
+} 
+
+* {
+    // Title background
+    color01: #29353B;
+    // Title text
+    color02: #CACDD0;
+    // Searchbar background
+    color03: #C0C6CA;
+    // Searchbar text
+    color04: #29353B;
+    // Inctive tab background
+    color05: #313131;
+    // Inctive tab text
+    color06: #CACDD0;
+    // Active tab background
+    color07: #C0C6CA;
+    // Active tab text
+    color08: #29353B;
+    // Active tab highlight
+    color09: #0f56d9;
+    // Selection background
+    color10: #0f56d9;
+    // Selection text 
+    color11: #ffffff;
+}
+
+window {
+anchor: center;
+location: center;
+y-offset: 0;
+x-offset: 0;
+width: 30%;
+}
+
+mainbox {
+    background-color: @color01;
+    children: [ inputbar, wrapper-mode-switcher, listview ];
+    spacing: 0px;
+}
+
+inputbar {
+    background-color: @color01;
+    text-color: @color02;
+    padding: 10px;
+    margin: 5px 0px 5px 0px;
+    children: [textbox-prompt-colon, entry];
+}
+
+textbox-prompt-colon {
+    background-color: @color01;
+    expand: false;
+    font: "FontAwesome 12";
+    str:  "";
+    vertical-align: 0.5;
+    text-color: @color02;
+}
+
+entry {
+    border-radius:  5px 5px 5px 5px;
+    background-color: @color03;
+    text-color: @color04;
+    font: "Noto Sans Bold 12";
+    vertical-align: 0.5;
+    padding: 5px 15px;
+}
+
+wrapper-mode-switcher {
+    orientation: horizontal;
+    expand: false;
+    spacing: 0;
+    children: [ mode-switcher ];
+}
+
+mode-switcher {
+    spacing: 0px;
+    expand: true;
+}
+
+button {
+    background-color: @color01;
+    text-color: @color06;
+    border: 4px 0px 0px 0px ;
+    border-color: @color01;
+}
+
+button selected.normal {
+    background-color: @color09;
+    text-color: @color11;
+    border: 4px 0px 0px 0px ;
+    border-color: @color09;
+}
+
+listview {
+    columns: 1;
+lines: 12;
+    background-color: @color07;
+}
+
+element {
+    background-color: @color07;
+    padding: 6;
+    text-color: @color08;
+}
+
+element selected {
+    background-color: @color10;
+    text-color: @color11;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+    vertical-align: 0.5;
+}
+
+element-icon {
+    size: 30;
+    background-color: inherit;
+}

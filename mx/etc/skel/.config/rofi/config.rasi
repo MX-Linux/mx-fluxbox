@@ -9,6 +9,6 @@ modi: "drun,filebrowser,window,help:/usr/share/rofi/rofi-help";
 
 @import "/mxrm-settings/display0.rasi"
 
-@theme "MX-comfort.rasi"
+@theme "MX-ease-dark.rasi"
 
 //@import "/mxrm-settings/mxrm-settings.rasi"
