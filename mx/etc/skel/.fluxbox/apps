@@ -151,3 +151,8 @@
 [app] (class=Tint2)
   [Layer] {1}
 [end]
+[app] (name=nitrogen) (class=Nitrogen)
+  [Dimensions]	{58% 80%}
+  [Position]	(UPPERLEFT)	{19% 11%}
+  [Close]	{yes}
+[end]
