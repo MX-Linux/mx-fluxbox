@@ -1,3 +1,13 @@
+mx-fluxbox (25.08.01mx25) UNRELEASED; urgency=medium
+
+  [melber]
+  * adjust fluxbox toolbar buttons
+  * other fluxbox toolbar adjustements
+  * appfinder theme mx-matcha
+  * update rofi styles
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 25 Aug 2025 21:38:44 -0400
+
 mx-fluxbox (25.07.06mx25) mx; urgency=medium
 
   * Non-maintainer upload.
