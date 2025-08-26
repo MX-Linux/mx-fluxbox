@@ -26,6 +26,7 @@ session.screen0.workspacewarpinghorizontaloffset:	1
 session.screen0.workspacewarpingverticaloffset:	1
 
 ### TOOLBAR ###
+#toggled-off#session.screen0.toolbar.tools:	button.appfinder, button.rootmenu, button.tools, button.files, button.browser, NextWorkspace, workspacename, iconbar, systemtray, clock, button.exitoptions
 session.screen0.toolbar.tools:	spacer_8, button.appfinder, spacer_6, button.tools, spacer_6, button.files, spacer_6, button.browser, NextWorkspace, workspacename, iconbar, clock, button.exitoptions
 session.screen0.toolbar.button.appfinder.label:	\357\200\202
 session.screen0.toolbar.button.appfinder.commands:	:exec rofi -show drun -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi : :exec appfinder-settings
