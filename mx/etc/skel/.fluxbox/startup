@@ -97,7 +97,7 @@ if [ $? -eq 0 ]; then
 fi
 
 # put apt-notifier on the toolbar
-(sleep 6; /usr/bin/apt-notifier) &
+mx-updater-autostart &
 
 # start spice-vdagent in KVM/Qemu 
 if [ -x /usr/bin/spice-vdagent ]; then
