@@ -1,5 +1,4 @@
 mx/*	/usr/share/mxflux/mx
-pi/*	/usr/share/mxflux/pi
 base-mxfb/mxfb_version /etc
 base-mxfb/HELP_Display usr/share/mxflux/help
 base-mxfb/*.desktop usr/share/applications

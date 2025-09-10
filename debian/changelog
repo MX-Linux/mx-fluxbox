@@ -1,3 +1,14 @@
+mx-fluxbox (25.09.01mx25) mx; urgency=medium
+  
+  [melber]
+  * update theme info
+  * update startup to launch mx-updater 
+  [dolphin oracle]
+  * cleanup root account area
+  * remove old armhf pi configs
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 09 Sep 2025 20:00:06 -0400
+
 mx-fluxbox (25.08.02mx25) mx; urgency=medium
 
   * Added location and dimension for nitrogen to app file

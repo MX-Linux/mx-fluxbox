@@ -8,35 +8,7 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
           x-session-manager.1.gz /usr/share/man/man1/startfluxbox.1.gz || :
     fi
     
-    #of pi, install pi defaults, assume armhf arch
-    
-    if [ "$(dpkg --print-architecture)" = "armhf" ]; then
-		echo "found armhf arch, using mx pi defaults"
-		cp -R /usr/share/mxflux/pi/* /
-	else
-		echo "found x86 arch, using mx defaults"
-		cp -R /usr/share/mxflux/mx/* /
-    fi
-    
-    #	update root account settings
-    #   if root theme configs exist, then do not update them.
-    
-    if [ ! -e "/root/.config/gtk-3.0/settings.ini" ]; then
-		if [ ! -d "/root/.config/gtk-3.0" ]; then
-			mkdir -p /root/.config/gtk-3.0/
-		fi
-		cp /etc/skel/.config/gtk-3.0/settings.ini /root/.config/gtk-3.0/settings.ini
-		if [ ! -e "/root/.gtkrc-2.0" ]; then
-			cp /etc/skel/.gtkrc-2.0 /root
-		fi
-		if [ ! -e "/root/.gtkrc-2.0-mine" ]; then
-			cp /etc/skel/.gtkrc-2.0-mine /root
-		fi
-    fi
-    # remove bad apt-notifier.conf
-    if [ -e "/etc/skel/.config/MX-Linux/apt-notifier.conf" ]; then
-    	rm "/etc/skel/.config/MX-Linux/apt-notifier.conf"
-    fi
+    cp -R /usr/share/mxflux/mx/* /
 fi
 
 
