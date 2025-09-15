@@ -27,6 +27,18 @@ xdg-user-dirs-update
 # Update common folders names to match current locale
 xdg-user-dirs-gtk-update
 
+#special, add bookmark in fluxbox
+#note this will apply to all desktop sessions, not just fluxbox
+#only do once
+if [ ! -e "$HOME/.fluxbox/bookmarkcheck" ]; then
+    touch "$HOME/.fluxbox/bookmarkcheck"
+#check to make sure doesn't exist already
+    if [ -z $(grep ".fluxbox" $HOME/.config/gtk-3.0/bookmarks) ]; then
+#add bookmark
+    echo "file://$HOME/.fluxbox Fluxbox" >> $HOME/.config/gtk-3.0/bookmarks
+    fi
+fi
+
 #start a compositor if using complicated conkies
 #picom &
 
