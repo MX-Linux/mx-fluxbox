@@ -1,3 +1,12 @@
+mx-fluxbox (25.09.02mx25) mx; urgency=medium
+
+  * add .fluxbox to side panel of thunar
+  [melber]
+  * update default style
+  * fix permissions on dock file 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 15 Sep 2025 19:21:23 -0400
+
 mx-fluxbox (25.09.01mx25) mx; urgency=medium
   
   [melber]
