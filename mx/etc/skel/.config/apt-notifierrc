@@ -1,6 +1,0 @@
-IconLook=pulse
-LeftClick=ViewAndUpgrade
-UpgradeAssumeYes=false
-UpgradeAutoClose=false
-UpgradeType=dist-upgrade
-WireframeTransparent=true
