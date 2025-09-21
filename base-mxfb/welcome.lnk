@@ -1,6 +1,6 @@
 table Icon
 Caption: Welcome!
-  Icon: /usr/local/share/icons/mx-welcome64.png
+  Icon: /usr/share/icons/mx-welcome64.png
   X: 200
   Y: 100
   Command[0]: ideskrun mx-welcome

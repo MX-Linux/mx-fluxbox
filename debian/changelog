@@ -1,3 +1,9 @@
+mx-fluxbox (25.09.05mx25) mx; urgency=medium
+
+  * update idesk icons for installer and welcome
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Sun, 21 Sep 2025 17:51:43 -0400
+
 mx-fluxbox (25.09.04mx25) mx; urgency=medium
 
   * mx-updater - use nala by default 

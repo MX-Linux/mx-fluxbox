@@ -1,6 +1,6 @@
 table Icon
   Caption: Install MX
-  Icon: /usr/local/share/icons/black-eclipse-no-border.png
+  Icon: /usr/share/icons/black-eclipse-no-border.png
   X: 300
   Y: 200
   Command[0]: ideskrun minstall-launcher
