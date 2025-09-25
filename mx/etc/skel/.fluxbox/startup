@@ -39,6 +39,11 @@ if [ ! -e "$HOME/.fluxbox/bookmarkcheck" ]; then
     fi
 fi
 
+# start spice-vdagent in KVM/Qemu 
+if [ -x /usr/bin/spice-vdagent ]; then
+   (sleep 5 && pidof -q  spice-vdagentd && ! pidof -q  spice-vdagent &&  /usr/bin/spice-vdagent)&
+fi
+
 #start a compositor if using complicated conkies
 #picom &
 
@@ -92,12 +97,12 @@ xfce4-clipman &
 # start user accessibility bus - if not already running
 /usr/libexec/at-spi-bus-launcher --launch-immediately  &
 
-#update app  menu if it doesn't exist
+# update app  menu if it doesn't exist
 if [ ! -f $HOME/.fluxbox/submenus/full_menu ]; then
     command -v mxfb-menu-generator && mxfb-menu-generator
 fi
 
-#add system monitors 
+# add system monitors 
 #gkrellm &
 
 # Debian-local change:
@@ -116,22 +121,21 @@ if [ -x /usr/bin/spice-vdagent ]; then
    pidof -q spice-vdagentd && /usr/bin/spice-vdagent
 fi
 
-#get last background selected
-#~/.fehbg
-#restore from saved background if exists and nitrogen installed
+# get last background selected
+# restore from saved background if exists and nitrogen installed
 if [ -x "/usr/bin/nitrogen" ]; then
     if [ -e "$HOME/.config/nitrogen/bg-saved.cfg" ]; then
         (sleep 1; nitrogen --restore & )
     else
         # set default background
-        (sleep 1; nitrogen --set-auto /usr/share/backgrounds/default25.png)
+        (sleep 1; nitrogen --set-scaled /usr/share/backgrounds/default25.png)
     fi
 fi
 
 # And last but not least we start fluxbox.
 # Because it is the last app you have to run it with ''exec'' before it.
 
-#screenblanking added by mx-tweak
+# screenblanking added by mx-tweak
 $HOME/.config/MX-Linux/screenblanking-mxtweak &
 
 exec fluxbox
