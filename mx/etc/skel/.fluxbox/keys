@@ -52,6 +52,9 @@ Ctrl F12 :Exec sleep 1 ; xset dpms force off
 # screen magnifier on|off
 Ctrl Alt m :Exec toggle-mx magnus
 
+# picom compositor on/off
+Ctrl Alt 0 :Exec toggle-mx picom  << the number zero not the letter "O"
+
 # open terminal
 Ctrl Alt t :Exec xfce4-terminal
 
