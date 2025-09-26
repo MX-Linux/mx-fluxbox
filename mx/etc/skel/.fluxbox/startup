@@ -122,6 +122,7 @@ if [ -x /usr/bin/spice-vdagent ]; then
 fi
 
 # get last background selected
+#~/.fehbg
 # restore from saved background if exists and nitrogen installed
 if [ -x "/usr/bin/nitrogen" ]; then
     if [ -e "$HOME/.config/nitrogen/bg-saved.cfg" ]; then
