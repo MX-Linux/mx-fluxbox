@@ -45,7 +45,7 @@ if [ -x /usr/bin/spice-vdagent ]; then
 fi
 
 #start a compositor if using complicated conkies
-#picom --config $HOME/.config/picom/picom.conf &
+#picom --dbus --config $HOME/.config/picom/picom.conf -b &
 
 # arandr genrated screenlayout 
 # before conky
