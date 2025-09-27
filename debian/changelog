@@ -1,6 +1,5 @@
-mx-fluxbox (25.09.06) mx; urgency=medium
+mx-fluxbox (25.09.06mx25) mx; urgency=medium
 
-  * Non-maintainer upload.
   * update README in Fluxbox backgrounds
   * create picom folder in config
   * add picom.conf and HELP doc to new folder
@@ -8,7 +7,7 @@ mx-fluxbox (25.09.06) mx; urgency=medium
   * add spice-agent to startup
   * change nitrogen default format to  set-scaled
 
- -- Dolphin Oracle <dolphinoracle@gmail.com>  Thu, 25 Sep 2025 10:29:44 -0400
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 26 Sep 2025 20:23:24 -0400
 
 mx-fluxbox (25.09.05mx25) mx; urgency=medium
 
