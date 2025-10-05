@@ -17,6 +17,6 @@ Description: mx apps and configuration defaults for fluxbox
 Package: mx-fluxbox
 Breaks: mx-fluxbox (<< 20.06.02)
 Conflicts: mx-fluxbox (<< 20.06.02)
-Depends: mx-fluxbox-data (= ${source:Version}), fluxbox, mx-idesktool, mxfb-styles, wmalauncher, gkrellm, mx-dockmaker, mxfb-docs | mxfbum, rofi, rofi-calc, tint2, grsync, exit-options, mxfb-accessories, mx-rofi-manager, preview-mx, xfonts-terminus, idesk, volumeicon-alsa, nitrogen
+Depends: mx-fluxbox-data (= ${source:Version}), fluxbox, mx-idesktool, mxfb-styles, wmalauncher, gkrellm, mx-dockmaker, mxfb-docs | mxfbum, rofi, rofi-calc, tint2, grsync, exit-options, mxfb-accessories, mx-rofi-manager, preview-mx, xfonts-terminus, idesk, volumeicon-alsa, nitrogen, policykit-1-gnome
 Architecture: all
 Description: mx apps and configuration defaults for fluxbox (metapackage)

@@ -16,6 +16,7 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
         idesk \
         nitrogen \
         volumeicon-alsa \
+        policykit-1-gnome \
         tint2 || :
 fi
 
