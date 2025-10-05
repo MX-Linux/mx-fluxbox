@@ -5,18 +5,17 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
 		mx-fluxbox-data \
         mx-idesktool \
         wmalauncher \
-        moka-icon-theme \
-        lxappearance \
         gkrellm \
-        mxfb-art \
         mx-dockmaker \
         mxfb-docs \
         rofi \
         rofi-calc \
-        mx-fluxbox-about \
         mx-rofi-manager \
         grsync \
         exit-options \
+        idesk \
+        nitrogen \
+        volumeicon-alsa \
         tint2 || :
 fi
 
