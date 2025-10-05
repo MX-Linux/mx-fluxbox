@@ -65,7 +65,7 @@ tint2session
 idesktoggle idesk on 1>/dev/null 2>&1 &
 
 # add root access
-/usr/libexec/polkit-mate-authentication-agent-1 &
+/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &
 
 #set the default dock
 $HOME/.fluxbox/scripts/DefaultDock.mxdk
