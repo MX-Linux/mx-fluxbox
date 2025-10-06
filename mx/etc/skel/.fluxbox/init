@@ -46,7 +46,7 @@ session.screen0.toolbar.placement: TopCenter
 session.screen0.toolbar.layer: Dock
 session.screen0.toolbar.widthPercent: 100
 session.screen0.toolbar.onhead:	1
-session.screen0.toolbar.height:	30
+session.screen0.toolbar.height:	28
 session.screen0.toolbar.autoHide: false
 session.screen0.toolbar.visible: false
 session.screen0.strftimeFormat:	%I:%M  %b %d
