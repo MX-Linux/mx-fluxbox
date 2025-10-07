@@ -1,3 +1,10 @@
+mx-fluxbox (25.10.02mx25) mx; urgency=medium
+
+  * Non-maintainer upload.
+  * fix fb toolbar height
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 06 Oct 2025 20:57:38 -0400
+
 mx-fluxbox (25.10.01mx25) mx; urgency=medium
 
   * revise depends to include policykit-1-gnome
