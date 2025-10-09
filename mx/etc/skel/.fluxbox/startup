@@ -16,6 +16,11 @@
 # logout, then log back in to fluxbox session
 localize_fluxbox_menu-mx
 
+# export Qt variables
+export QT_QPA_PLATFORMTHEME=gtk2
+export QT_PLATFORMTHEME=gtk2
+export QT_PLATFORM_PLUGIN=gtk2
+
 # mx-welcome if configured to autostart
 if [ -e $HOME/.config/autostart/mx-welcome.desktop ]; then
 # launch mx-welcome
@@ -49,11 +54,6 @@ fi
 
 # arandr genrated screenlayout 
 # before conky
-
-# export Qt variables
-export QT_QPA_PLATFORMTHEME=gtk2
-export QT_PLATFORMTHEME=gtk2
-export QT_PLATFORM_PLUGIN=gtk2
 
 # add selected tint2 panel
 tint2session 
