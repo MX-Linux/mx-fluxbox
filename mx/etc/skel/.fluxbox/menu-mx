@@ -14,7 +14,7 @@ the default versions of the submenus are located in /usr/share/mxflux/menu
     [exec] (File manager) {exo-open $HOME} 
     [exec] (Help) {mxfb-help}
     [submenu] (Multimedia)
-    	[exec] (Music player) {deadbeef}
+    	[exec] (Music player) {audacious}
     	[exec] (Webcomic) {bl-xkcd}
         [end]
     [submenu] (Other)
