@@ -1,10 +1,9 @@
 mx-fluxbox (25.10.3mx25) mx; urgency=medium
 
-  * Non-maintainer upload.
   * change music player to audacious
   * add config folder for audacious with HELP file
 
- -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 10 Oct 2025 13:28:20 -0400
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Tue, 21 Oct 2025 19:43:49 -0400
 
 mx-fluxbox (25.10.02mx25) mx; urgency=medium
 
