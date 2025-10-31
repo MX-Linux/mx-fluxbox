@@ -1,3 +1,15 @@
+mx-fluxbox (25.10.6mx25) mx; urgency=medium
+
+  * more appfinder adjustments
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 31 Oct 2025 19:45:38 -0400
+
+mx-fluxbox (25.10.5mx25) mx; urgency=medium
+
+  * update session manangment links in appfinder
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 31 Oct 2025 06:58:45 -0400
+
 mx-fluxbox (25.10.4mx25) mx; urgency=medium
 
   * remove systray from default fluxbox toolbar config
