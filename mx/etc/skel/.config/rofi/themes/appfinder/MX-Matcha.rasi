@@ -20,7 +20,7 @@
     // Active tab highlight
     color09: #0f56d9;
     // Selection background
-    color10: #0f56d9;
+//    color10: #0f56d9;
     // Selection text 
     color11: #424242;
    }	
@@ -36,8 +36,9 @@ element {
 }
 
 element selected {
-        border:			0px;
-        text-color: @color08;
+    background-color:	@color19;
+    border:			0px;
+    text-color: @color08;
 }
 
 button {
@@ -45,7 +46,7 @@ button {
 }
 
 button selected {
-        background-color: @color09;
+        background-color: @color10;
         text-color:       @color08;
         border:           0px;
 }

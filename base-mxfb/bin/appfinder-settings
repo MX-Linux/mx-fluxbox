@@ -62,11 +62,28 @@ if [ "$update_check" != "$checkdate" ]; then
                cp $i $target_path/$rasi_theme
            fi
        done
-   
-       printf "update_check=$checkdate\n" >> $HOME/.config/MX-Linux/appfinder-updatecheck.conf
-   
    fi
+   
+   printf "update_check=$checkdate\n" >> $HOME/.config/MX-Linux/appfinder-updatecheck.conf
+fi
 
+checkdate2=2511-2
+
+if [ "$update_check2" != "$checkdate2" ]; then
+
+    usrshare_path="/usr/share/mxflux/mx/etc/skel/.config/rofi/themes/appfinder"
+    
+    checkdate2_files=(Ease Ease-dark MX-Matcha MX-Matcha-dark)
+    
+    for i in ${checkdate2_files[@]}; do
+        cp $usrshare_path/$i.rasi $target_path/$i.rasi
+    done
+
+    old_highlight=$(grep 'color09:' $appfinder_config_path)
+    sed -i "s/$old_highlight/color09: #0f56d9;\ncolor19: #c3d5f6;/" $appfinder_config_path
+
+    printf "update_check2=$checkdate2\n" >> $HOME/.config/MX-Linux/appfinder-updatecheck.conf
+   
 fi
 
 #######################################
@@ -124,6 +141,8 @@ done
 ####highlight color
 
 AF_HILITE="$(grep 'color09:' $appfinder_config_path | sed -e "s/color09\: //" | sed -e "s/\;//" | sed -e "s/ //g")"
+
+AF_HILITE2="$(grep 'color19:' $appfinder_config_path | sed -e "s/color19\: //" | sed -e "s/\;//" | sed -e "s/ //g")"
 
 #######################################
 #### tabs
@@ -327,7 +346,7 @@ SETTINGS=$(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" \
 --field="$(gettext 'Height ')":NUM "$LINVALUE\!1..100\!1\!0" \
 --field="$(gettext 'Font ')":FN "$FONVALUE" \
 --field=" ":LBL "|" \
---field='!color-select!':BTN '@bash -c "color_picker 9 %9;"' \
+--field='!color-select!':BTN '@bash -c "color_picker 11 %11;"' \
 --field=" ":LBL "|" \
 --field=" ":LBL "|" \
 --field=" ":LBL "|" \
@@ -375,6 +394,7 @@ case $ret in
 
     if [ "$AF_HILITE_NEW" != "$AF_HILITE" ]; then
         sed -i "s/color09\: $AF_HILITE/color09\: $AF_HILITE_NEW/" $appfinder_config_path
+        sed -i "s/color19\: $AF_HILITE2/color19\: $AF_HILITE_NEW/" $appfinder_config_path
     fi
 
 ###################################################################

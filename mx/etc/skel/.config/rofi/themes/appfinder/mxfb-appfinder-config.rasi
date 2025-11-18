@@ -9,13 +9,14 @@
     // mxfb-appfinder-config
     // uses flag-for-font-awesome
 
-font: "Noto Sans 11";
+font: "Liberation Sans 11.5";
 }
 
 
 * {
     // Active tab highlight
-    color09: #0f56d9;
+color09: #0f56d9;
+color19: #C3D5F6;
    }
    
 window {
@@ -155,4 +156,4 @@ button selected {
         border-radius:	0;
 }
 
-@import "~/.config/rofi/themes/appfinder/Comfort-dark.rasi"
+@import "~/.config/rofi/themes/appfinder/Ease.rasi"
