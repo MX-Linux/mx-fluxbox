@@ -79,10 +79,16 @@ if [ "$update_check2" != "$checkdate2" ]; then
         cp $usrshare_path/$i.rasi $target_path/$i.rasi
     done
 
-    old_highlight=$(grep 'color09:' $appfinder_config_path)
-    sed -i "s/$old_highlight/color09: #0f56d9;\ncolor19: #c3d5f6;/" $appfinder_config_path
+    color19_check=$(grep 'color19:' $appfinder_config_path)
+    
+    if [ -z "$color19_check" ]; then
+    
+        old_highlight=$(grep 'color09:' $appfinder_config_path)
+        sed -i "s/$old_highlight/color09: #0f56d9;\ncolor19: #c3d5f6;/" $appfinder_config_path
 
-    printf "update_check2=$checkdate2\n" >> $HOME/.config/MX-Linux/appfinder-updatecheck.conf
+    fi
+    
+        printf "update_check2=$checkdate2\n" >> $HOME/.config/MX-Linux/appfinder-updatecheck.conf
    
 fi
 
