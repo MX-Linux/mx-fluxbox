@@ -20,8 +20,7 @@ appfinder_config_path="$HOME/.config/rofi/themes/appfinder/mxfb-appfinder-config
 target_path="$HOME/.config/rofi/themes/appfinder"
 
 
-#######################################
-####update check
+#update check
 
 if [ -f $HOME/.config/MX-Linux/appfinder-updatecheck.conf ]; then
     source $HOME/.config/MX-Linux/appfinder-updatecheck.conf
@@ -35,7 +34,7 @@ if [ "$update_check" != "$checkdate" ]; then
     cp $appfinder_path $HOME/.restore/rofi/pre-"$checkdate"-mxfb-appfinder.rasi
     cp $appfinder_config_path $HOME/.restore/rofi/pre-"$checkdate"-mxfb-appfinder-config.rasi
    
-   #update tabs   
+#update tabs   
    mx23_tabs="$(grep 'modi:' $appfinder_path)"
    
    if [ "$mx23_tabs" != 'modi: "drun,:/usr/bin/app-categories,help:/usr/share/rofi/rofi-help_appfinder,:/usr/bin/appfinder-exit";' ]; then
@@ -48,10 +47,10 @@ if [ "$update_check" != "$checkdate" ]; then
    
        check_if_mx25=$(grep "appfinder-exit" $appfinder_path)
    
-   #update display0.rasi
+#update display0.rasi
        sed -i "s/\/\/" $HOME/.config/rofi/themes/mxrm-settings/display0.rasi
    
-   #update themes
+#update themes
        usrshare_path="/usr/share/mxflux/mx/etc/skel/.config/rofi/themes/appfinder"
    
        rasi_list=$(ls $usrshare_path/*.rasi)
@@ -92,15 +91,20 @@ if [ "$update_check2" != "$checkdate2" ]; then
    
 fi
 
-#######################################
-####function
 
-#color_picker function
+#function color_picker
 
 color_picker() {
 	source gettext.sh
     local N=$1 C="$2"
-	local YAD=(
+    
+    if [ "$1" = "reset" ]; then
+    
+        echo "13:#0F56D9"
+    
+    else
+    
+	    local YAD=(
             yad
             --title="$(gettext 'color-selector')"
             --class=color-select
@@ -109,23 +113,21 @@ color_picker() {
             --posy=200
             --color
             --picker
-            --init-color="#0f56d9"
+            --init-color="$2"
             )
 	C=$("${YAD[@]}")
-	(($?==0)) && echo "$N:$C"
+	(($?==0)) && echo "$1:$C"
+	
+	fi
 	
 }
 
-export -f color_picker
 
-#######################################
-####function
+#function appfinder_settings
 
 appfinder_settings() {
 
-
-#######################################
-####theme
+#theme
 
 AF_THEME="$(grep 'import' $appfinder_config_path)"
 AF_THEMENAME="$(echo $AF_THEME | sed -e "s/\@import//" | sed -e "s/\"//g" | sed -e "s/.rasi//" | sed -e "s/ //g")"
@@ -143,15 +145,15 @@ for i in ${af_themelist[@]}; do
     fi
 done
 
-#######################################
-####highlight color
+
+#highlight color
 
 AF_HILITE="$(grep 'color09:' $appfinder_config_path | sed -e "s/color09\: //" | sed -e "s/\;//" | sed -e "s/ //g")"
 
 AF_HILITE2="$(grep 'color19:' $appfinder_config_path | sed -e "s/color19\: //" | sed -e "s/\;//" | sed -e "s/ //g")"
 
-#######################################
-#### tabs
+
+#tabs
 CURRENTTABS="$(grep 'modi:' $appfinder_path)"
 
 CURRENTTABS1=$(echo $CURRENTTABS | sed -e "s/help:\/usr\/share\/rofi\/rofi-help_appfinder/help/g" )
@@ -160,8 +162,6 @@ CURRENTTABS1=$(echo $CURRENTTABS1 | sed -e "s/\\:\/usr\/bin\/appfinder-exit/e
 CURRENTTABS1=$(echo $CURRENTTABS1 | sed -e 's/modi: //g' | sed -e 's/;//g' | sed -e 's/,/ /g' | sed -e 's/"//g')
 
 tab_array=($CURRENTTABS1)
-
-#TAB_NUMBER=${#tab_array[@]}
 
 CURTAB_1="${tab_array[0]}"
 
@@ -191,10 +191,7 @@ CURTAB_6="${tab_array[5]}"
     fi
 
 
-#######################################
-#### rofi_position
-
-#get current position
+#rofi_position
 
 ROFILOCATIONOLD="$(grep "location" $appfinder_config_path)"
 
@@ -286,7 +283,6 @@ LINVALUE=$(echo "${ROFIHEIGHTOLD}" | sed -e 's/height\://g' | sed -e 's/\;//g' )
 ROFIHEIGHTOLD=$(echo "${ROFIHEIGHTOLD}" | sed -e 's/[]$\/*[\^]/\\&%/g' )
 
 
-###################################################################
 #font
 
 ROFIFONTOLD="$(grep "font:" $appfinder_config_path | head -1 )"
@@ -302,7 +298,7 @@ FONVALUE=$(echo "${ROFIFONTOLD}" | sed -e 's/font\://g' | sed -e 's/\;//g'| sed 
 
 ROFIFONTOLD=$(echo "${ROFIFONTOLD}" | sed -e 's/[]$\/*"[\^]/\\&/g' )
 
-###################################################################
+
 #windows key
 WINKEYOLD="$(grep "rofi -show drun" $HOME/.fluxbox/keys )"
 
@@ -312,15 +308,12 @@ WINKEYOLD="$(grep "rofi -show drun" $HOME/.fluxbox/keys )"
         WINKEYLIST='appfinder!rofi'
 	fi
 
-###################################################################
-#YAD WINDOW
-###################################################################
 
-# buttons
+#YAD WINDOW
+
+#buttons
 export BTN_CLOSE=$(gettext "Close") ; BTN_CLOSE+='!window-close'
 export BTN_APPLY=$(gettext "Apply") ; BTN_APPLY+='!object-select'
-
-#
 
 TITLE="$(gettext 'Appfinder Settings')"
 CLASS="appfinder-settings"
@@ -332,6 +325,7 @@ SETTINGS=$(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" \
 --text-align=left --height=450 --width=600 --borders=20 \
 --center --align=right --separator="|" --form --columns=3 --output-by-row \
 --button="${BTN_CLOSE}":7 --button="${BTN_APPLY}":6 \
+--button="test":8 \
 --field="$(gettext 'Theme ')":CB "$AF_THEMENAME$AF_THEME_OTHER" \
 --field=" ":LBL "|" \
 --field=" ":LBL "|" \
@@ -342,8 +336,10 @@ SETTINGS=$(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" \
 --field="Tab 5 ":CB "$CURTAB_5!$TABLIST" \
 --field="Tab 6 ":CB "$CURTAB_6!$TABLIST" \
 --field=" ":LBL "|" \
---field="$(gettext '   Highlight Color ')":CLR "$AF_HILITE" \
---field="$(gettext 'Super Key opens ')":CB "$WINKEYLIST" \
+--field=" ":LBL "|" \
+--field=" ":LBL "|" \
+--field="$(gettext 'Highlight Color ')":CLR "$AF_HILITE" \
+--field="Restore default highlight color(s) ":LBL "|" \
 --field=" ":LBL "|" \
 --field="$(gettext 'Location ')":CB "$LOCVALUE!northwest!north!northeast!west!center!east!southwest!south!southeast" \
 --field="$(gettext 'X-Offset ')":NUM  "$XOFFVALUE\!-500..500\!1\!0" \
@@ -352,7 +348,10 @@ SETTINGS=$(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" \
 --field="$(gettext 'Height ')":NUM "$LINVALUE\!1..100\!1\!0" \
 --field="$(gettext 'Font ')":FN "$FONVALUE" \
 --field=" ":LBL "|" \
---field='!color-select!':BTN '@bash -c "color_picker 11 %11;"' \
+--field="$(gettext 'Super Key opens ')":CB "$WINKEYLIST" \
+--field=" ":LBL "|" \
+--field='!color-select!':BTN '@bash -c "color_picker 13 %13;"' \
+--field="$(gettext '!view-refresh!')":BTN '@bash -c "color_picker reset %13;"' \
 --field=" ":LBL "|" \
 --field=" ":LBL "|" \
 --field=" ":LBL "|" \
@@ -361,12 +360,29 @@ SETTINGS=$(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" \
 --field="%   ":LBL "|" \
 --field="%   ":LBL "|" \
 --field=" ":LBL "|" \
---field=" ":LBL "|"
+--field=" ":LBL "|" \
 )
 
 ret=$?
 
 case $ret in
+
+    8 )
+        RES=$(echo "$SETTINGS" | sed -e "s/ /-/g" | sed -e "s/|/ /g" | sed -e "s/__/ /g" | sed -e "s/___/ /g" | sed -e "s/____/ /g")
+
+    af_settings=($RES)
+    
+    echo "theme ${af_settings[0]}x"
+    echo "hilite ${af_settings[1]}"
+    echo "tabs ${af_settings[4]} ${af_settings[6]} ${af_settings[8]} ${af_settings[10]} ${af_settings[12]}"
+    echo "window ${af_settings[3]} ${af_settings[5]} ${af_settings[7]} ${af_settings[9]} ${af_settings[11]}"
+    echo "font ${af_settings[13]}"
+    echo "key ${af_settings[14]}"
+
+        
+    ;;
+
+
     7 | 252 )
         ENDLOOP=getouttahere
     ;;
@@ -377,9 +393,8 @@ case $ret in
 
     af_settings=($RES)
 
-###################################################################
-###################################################################
 #apply theme
+
     AF_THEMENAME_NEW="${af_settings[0]}"
 
     if [ "$AF_THEMENAME_NEW" != "$AF_THEMENAME" ]; then
@@ -393,39 +408,27 @@ case $ret in
 
     fi
 
-###################################################################
+
 #apply highlight color
 
     AF_HILITE_NEW="${af_settings[1]}"
-
+   
     if [ "$AF_HILITE_NEW" != "$AF_HILITE" ]; then
         sed -i "s/color09\: $AF_HILITE/color09\: $AF_HILITE_NEW/" $appfinder_config_path
         sed -i "s/color19\: $AF_HILITE2/color19\: $AF_HILITE_NEW/" $appfinder_config_path
     fi
 
-###################################################################
-#apply windows key
-
-    WINKEYNEW="${af_settings[2]}"
-    
-    if [ "$WINKEYNEW" = 'rofi' ]; then
-		WINKEYNEW='Super_L :Exec rofi -show drun'
-    else
-        WINKEYNEW='Super_L :Exec rofi -show drun -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi'
-	fi
-	
-	WINKEYNEW=$(echo "${WINKEYNEW}" | sed -e 's/[]$\/"*[\^]/\\&/g' )
-	WINKEYOLD=$(echo "${WINKEYOLD}" | sed -e 's/[]$\/"*[\^]/\\&/g' )
-		
-	if [ "$WINKEYNEW" != "$WINKEYOLD" ]; then
-        sed -i -e "s/${WINKEYOLD}/${WINKEYNEW}/g" $HOME/.fluxbox/keys
-        fluxbox-remote reconfigure
+    if [ "$AF_HILITE_NEW" = "#0F56D9" ]; then
+        if [[ "$AF_THEMENAME_NEW" = @(Ease|Ease-dark) ]]; then
+            sed -i "s/color19\: $AF_HILITE_NEW/color19\: #C3D5F6/" $appfinder_config_path
+        else
+            sed -i "s/color19\: $AF_HILITE2/color19\: $AF_HILITE_NEW/" $appfinder_config_path
+        fi       
     fi
     
-###################################################################
 #apply tabs
 
-    NEWTABS="modi: \"drun,"${af_settings[5]}","${af_settings[7]}","${af_settings[9]}","${af_settings[11]}","${af_settings[13]}"\";"
+    NEWTABS="modi: \"drun,"${af_settings[4]}","${af_settings[6]}","${af_settings[8]}","${af_settings[10]}","${af_settings[12]}"\";"
 
     NEWTABS=$(echo "${NEWTABS}" | sed -e "s/categories/\\:\/usr\/bin\/app-categories/g" )
     NEWTABS=$(echo "${NEWTABS}" | sed -e "s/help/help\:\/usr\/share\/rofi\/rofi-help_appfinder/g" )
@@ -438,14 +441,14 @@ case $ret in
         sed -i "s/${CURRENTTABS}/${NEWTABS}/" $appfinder_path
     fi
 
-###################################################################
+
 #apply new position
 
-    LOCNEW="${af_settings[4]}"
-    XOFNEW="${af_settings[6]}"
-    YOFNEW="${af_settings[8]}"
-    WIDNEW="${af_settings[10]}"
-    HIGNEW="${af_settings[12]}"
+    LOCNEW="${af_settings[3]}"
+    XOFNEW="${af_settings[5]}"
+    YOFNEW="${af_settings[7]}"
+    WIDNEW="${af_settings[9]}"
+    HIGNEW="${af_settings[11]}"
 
     ROFILOCATIONNEW="location: "$LOCNEW";"
     ROFILOCATIONNEW=$(echo "${ROFILOCATIONNEW}" | sed -e 's/[]$\/*[\^]/\\&/g' )
@@ -464,6 +467,7 @@ case $ret in
 
     ROFIHEIGHTNEW="height: "$HIGNEW"%;"
     ROFIHEIGHTNEW=$(echo "${ROFIHEIGHTNEW}" | sed -e 's/[]$\/*[\^]/\\&%/g')
+
 
 #check change
 
@@ -492,10 +496,9 @@ case $ret in
     fi
 
 
-###################################################################
 #apply font
 
-    FONT_NEW=$(echo "${af_settings[@]:14}" | sed -e "s/-/ /g")
+    FONT_NEW=$(echo "${af_settings[13]}" | sed -e "s/-/ /g")
     ROFIFONTNEW="font: \""$FONT_NEW"\";"
     ROFIFONTNEW=$(echo "${ROFIFONTNEW}" | sed -e 's/[]$\/"*[\^]/\\&/g' )
 
@@ -503,15 +506,34 @@ case $ret in
         sed -i -e "s/${ROFIFONTOLD}/${ROFIFONTNEW}/g" $appfinder_config_path
     fi
 
+
+#apply windows key
+
+    WINKEYNEW="${af_settings[14]}"
+    
+    if [ "$WINKEYNEW" = 'rofi' ]; then
+		WINKEYNEW='Super_L :Exec rofi -show drun'
+    else
+        WINKEYNEW='Super_L :Exec rofi -show drun -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi'
+	fi
+	
+	WINKEYNEW=$(echo "${WINKEYNEW}" | sed -e 's/[]$\/"*[\^]/\\&/g' )
+	WINKEYOLD=$(echo "${WINKEYOLD}" | sed -e 's/[]$\/"*[\^]/\\&/g' )
+		
+	if [ "$WINKEYNEW" != "$WINKEYOLD" ]; then
+        sed -i -e "s/${WINKEYOLD}/${WINKEYNEW}/g" $HOME/.fluxbox/keys
+        fluxbox-remote reconfigure
+    fi
+    
     ;;
+
 esac
 
 }
 
-export appfinder_settings
+export -f color_picker appfinder_settings
 
 
-################################################
 ####
 
 until [ "$ENDLOOP" = "getouttahere" ]; do
