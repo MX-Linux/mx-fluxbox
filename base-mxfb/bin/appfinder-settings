@@ -325,7 +325,6 @@ SETTINGS=$(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" \
 --text-align=left --height=450 --width=600 --borders=20 \
 --center --align=right --separator="|" --form --columns=3 --output-by-row \
 --button="${BTN_CLOSE}":7 --button="${BTN_APPLY}":6 \
---button="test":8 \
 --field="$(gettext 'Theme ')":CB "$AF_THEMENAME$AF_THEME_OTHER" \
 --field=" ":LBL "|" \
 --field=" ":LBL "|" \
@@ -366,22 +365,6 @@ SETTINGS=$(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" \
 ret=$?
 
 case $ret in
-
-    8 )
-        RES=$(echo "$SETTINGS" | sed -e "s/ /-/g" | sed -e "s/|/ /g" | sed -e "s/__/ /g" | sed -e "s/___/ /g" | sed -e "s/____/ /g")
-
-    af_settings=($RES)
-    
-    echo "theme ${af_settings[0]}x"
-    echo "hilite ${af_settings[1]}"
-    echo "tabs ${af_settings[4]} ${af_settings[6]} ${af_settings[8]} ${af_settings[10]} ${af_settings[12]}"
-    echo "window ${af_settings[3]} ${af_settings[5]} ${af_settings[7]} ${af_settings[9]} ${af_settings[11]}"
-    echo "font ${af_settings[13]}"
-    echo "key ${af_settings[14]}"
-
-        
-    ;;
-
 
     7 | 252 )
         ENDLOOP=getouttahere
