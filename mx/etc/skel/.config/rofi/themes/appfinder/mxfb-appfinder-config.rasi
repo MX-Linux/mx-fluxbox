@@ -156,4 +156,4 @@ button selected {
         border-radius:	0;
 }
 
-@import "~/.config/rofi/themes/appfinder/Ease.rasi"
+@import "~/.config/rofi/themes/appfinder/MX-Matcha.rasi"

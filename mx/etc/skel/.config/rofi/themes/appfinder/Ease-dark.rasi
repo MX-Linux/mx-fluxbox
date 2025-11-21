@@ -17,10 +17,11 @@
     color07: #1D2324;
     // Active tab text
     color08: #ffffff;
-    // Active tab highlight
-    color10: #0f56d9;
     // Selection background
 //    color09: #c3d5f6;
+    // Active tab highlight
+    color10: #0f56d9;
+
     // Selection text 
     color11: #424242;
    }
@@ -47,7 +48,7 @@ button {
 }
 
 button selected {
-    background-color: @color10;
+    background-color: @color09;
     text-color:       @color04;
     border:           0px;
 }

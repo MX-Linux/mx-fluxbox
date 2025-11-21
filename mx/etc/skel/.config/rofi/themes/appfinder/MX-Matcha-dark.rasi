@@ -46,7 +46,7 @@ button {
 }
 
 button selected {
-        background-color: @color19;
+        background-color: @color09;
         text-color:       @color08;
         border:           0px;
 }

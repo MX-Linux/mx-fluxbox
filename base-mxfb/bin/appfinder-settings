@@ -71,23 +71,22 @@ checkdate2=2511-2
 if [ "$update_check2" != "$checkdate2" ]; then
 
     usrshare_path="/usr/share/mxflux/mx/etc/skel/.config/rofi/themes/appfinder"
-    
     checkdate2_files=(Ease Ease-dark MX-Matcha MX-Matcha-dark)
     
     for i in ${checkdate2_files[@]}; do
         cp $usrshare_path/$i.rasi $target_path/$i.rasi
     done
-
+ 
     color19_check=$(grep 'color19:' $appfinder_config_path)
     
-    if [ -z "$color19_check" ]; then
-    
+    if [ -z "$color19_check" ]; then    
         old_highlight=$(grep 'color09:' $appfinder_config_path)
         sed -i "s/$old_highlight/color09: #0f56d9;\ncolor19: #c3d5f6;/" $appfinder_config_path
-
     fi
+   
+    sed -i 's|@import "~/.config/rofi/themes/appfinder/Comfort-dark.rasi"|@import "~/.config/rofi/themes/appfinder/MX-Matcha.rasi"|' $appfinder_config_path
     
-        printf "update_check2=$checkdate2\n" >> $HOME/.config/MX-Linux/appfinder-updatecheck.conf
+    printf "update_check2=$checkdate2\n" >> $HOME/.config/MX-Linux/appfinder-updatecheck.conf
    
 fi
 
