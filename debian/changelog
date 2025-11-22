@@ -1,5 +1,11 @@
 mx-fluxbox (25.11.1mx25) mx; urgency=medium
 
+  * updates to appfinder 
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Fri, 21 Nov 2025 20:35:49 -0500
+
+mx-fluxbox (25.11.1mx25) mx; urgency=medium
+
   * add qsi to default desktop
 
  -- Dolphin Oracle <dolphinoracle@gmail.com>  Wed, 05 Nov 2025 18:14:06 -0500
