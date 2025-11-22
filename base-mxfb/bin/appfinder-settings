@@ -74,6 +74,7 @@ if [ "$update_check2" != "$checkdate2" ]; then
     checkdate2_files=(Ease Ease-dark MX-Matcha MX-Matcha-dark)
     
     for i in ${checkdate2_files[@]}; do
+        cp $target_path/$i.rasi $HOME/.restore/rofi/pre-$checkdate2-$i.rasi
         cp $usrshare_path/$i.rasi $target_path/$i.rasi
     done
  
