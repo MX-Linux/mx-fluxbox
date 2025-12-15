@@ -1,28 +1,18 @@
 [begin] (Appearance) 
-    [exec] (Conky){conky-manager2}
+    [exec] (Conky){mx-conky}
     [submenu] (Docks)
         [exec] (Default) {~/.fluxbox/scripts/DefaultDock.mxdk}
+        [exec] (Tint2) {mxfb-tint2-manager}
         [separator]
         [exec] (Dockmaker) {mx-dockmaker}
     [end]
     [exec] (Desktop icons) {mx-idesktool}
+    [Exec] (Font) {mxfb-font} 
     [exec] (Monitors) {gkrellm}
-    [submenu] (Style)
-        [stylesdir] (~/.fluxbox/styles)
-        [separator]
-        [stylesdir] (/usr/share/fluxbox/styles) 
-    [end]
-    [exec] (Theme) {lxappearance}
-    [submenu] (Toolbar)
-        [exec] (Fluxbox) {toggletint2}
-        [exec] (Traditional) {toggletint2}
-    [end]
+  	[Exec] (Theme) {mx-tweak --theme}
     [submenu] (Wallpaper) 
-    [exec] (Rotate) {mxfb-bg-rotate}
-    [exec] (Separate) {mxfb-separate-backgrounds}
-    [submenu] (Select)
-    [wallpapers] (~/.fluxbox/backgrounds) {feh --bg-scale}
-    [separator]
-    [wallpapers] (/usr/share/backgrounds) {feh --bg-scale}
+        [exec] (Select) {nitrogen}
+        [exec] (Rotate) {mxfb-bg-rotate}
+        [exec] (Separate) {mxfb-separate-backgrounds}
     [end]
 [end]

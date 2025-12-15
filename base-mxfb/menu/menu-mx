@@ -1,39 +1,50 @@
-#the default versions of the submenus are located in /usr/share/mxflux/menu
+the default versions of the submenus are located in /usr/share/mxflux/menu
 
-[begin] (Fluxbox)
-	[Exec] (All Apps) {rofi NEED REST}
-	[submenu] (Recent files) 
+[begin] (MX Fluxbox)
+   	[submenu] (All Apps)
+   		[exec] (Search) {rofi -show drun}
+   		[separator]
+   		[include] (~/.fluxbox/submenus/full_menu)
+        [separator]
+        [exec] (Update)  {/usr/bin/mxfb-menu-generator}
+        [exec] (Disable) {mx-tweak --other}
+   	[end]
+    [separator]
+    [exec] (Web browser) {sensible-browser}
+    [exec] (File manager) {exo-open $HOME} 
+    [exec] (Help) {mxfb-help}
+    [submenu] (Multimedia)
+    	[exec] (Music player) {audacious}
+    	[exec] (Webcomic) {bl-xkcd}
+        [end]
+    [submenu] (Other)
+    	[submenu] (Recent files) 
 			[include] (~/.fluxbox/submenus/recent_files_menu)
 			[separator]
-			[exec] (Update list) {mxfb-recent-files}
+			[exec] (Update) {mxfb-recent-files}
 		[end]
-	[separator]
-    [exec] (Browser) {sensible-browser}
-    [exec] (Email) {thunderbird}
-    [exec] (File manager ) {exo-open $HOME/.fluxbox} 
-    [submenu] (Goodies)
-    	[exec] (Weather) {weather_cli}
-    	[exec] (Xkcd) {bl-xkcd}
-    [end]
-    [exec] (Help ) {mxfbhelp}
-    [exec] (Music) {deadbeef}
-    [exec] (Run ) {rofi -show run -theme ~/.config/rofi/themes/MX-run.rasi -run-shell-command 'rofi-sensible-terminal -e bash -c "{cmd} && read"'} 
-    [exec] (Terminal) {xfce4-terminal} 
+		[exec] (Screen capture) {mxfb-quickshot}
+		[exec] (Weather) {mxfb-simple-weather}
+	[end]
+    [exec] (Run) {mxfb-rofirun}
+    [exec] (MX Fluxbox tools) {custom-toolbox /etc/custom-toolbox/mxfb-settings.list} 
+    [exec] (Terminal) {x-terminal-emulator} 
     [separator]
     [submenu] (Appearance)
-    [include] (~/.fluxbox/submenus/appearance)
+    	[include] (/usr/share/mxflux/menu-translations/appearance_en)
     [end]
     [submenu] (Settings)
-    [include] (~/.fluxbox/submenus/settings)
+    	[include] (/usr/share/mxflux/menu-translations/settings_en)
     [end]
     [submenu] (Out of sight)
-        [include] (~/.fluxbox/submenus/out-of-sight)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_en)
     [end]
     [submenu] (Leave)
-        [exec] (Refresh) { fluxbox-remote restart; idesktoggle idesk refresh }
-        [exec] (Suspend ) {sudo 'pm-suspend'}
-        [exit] (Logout  ) 
-        [exec] (Reboot  ) {sudo /sbin/reboot} 
-        [exec] (Shutdown) {sudo /sbin/halt}
+        [exec] (Refresh) {fluxbox-remote restart; idesktoggle idesk refresh; nitrogen --restore } 
+        [exec] (Suspend) {sudo 'pm-suspend'}
+        [exec] (Lock) {dm-tool switch-to-greeter}
+        [exit] (Logout) 
+        [exec] (Reboot) {sudo /sbin/reboot} 
+        [exec] (Shutdown) {sudo poweroff}
     [end]
 [end]

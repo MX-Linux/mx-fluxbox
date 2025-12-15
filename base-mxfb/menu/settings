@@ -1,23 +1,29 @@
 [begin] (Settings)
     [exec] (Backup) {grsync}
-    [submenu] (Configure)
+    [submenu] (Config files)
+        [config] (Quick config)
         [exec] (Apps) {exo-open ~/.fluxbox/apps}
-        [exec] (Init) {exo-open ~/.fluxbox/init}
+        [submenu] (Init) 
+        	[exec] (Edit) {exo-open ~/.fluxbox/init}
+        	[separator]
+        	[exec] (Categorize) {mxfb-sortinit}
+        [end]
         [exec] (Keys) {exo-open ~/.fluxbox/keys}
         [submenu] (Menus) 
            [exec] (Main) {exo-open ~/.fluxbox/menu-mx}
            [exec] (Appearance) {exo-open ~/.fluxbox/submenus/appearance}
            [exec] (Settings) {exo-open ~/.fluxbox/submenus/settings}
-         [exec] (Out of sight) {exo-open ~/.fluxbox/submenus/out-of-sight}
+           [exec] (Out of sight) {exo-open ~/.fluxbox/submenus/out-of-sight}
         [end]
         [exec] (Overlay) {exo-open ~/.fluxbox/overlay}
         [exec] (Startup) {featherpad ~/.fluxbox/startup}
         [exec] (Styles) {thunar ~/.fluxbox/styles/}
-        [config] (Window)         
+        [exec] (Tint2 panel) {mxfb-tint2-manager}
     [end]
     [submenu] (Display)
-    [exec] (Change) {arandr}
-    [exec](Help) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    	[exec] (Change) {arandr}
+    	[exec](Help) {xdg-open /usr/share/mxflux/help/HELP_Display}
+    	[exec] (Screensaver) {exo-open /usr/share/doc/mxfb-accessories/help_mxfb-screensaver}
     [end]
     [submenu] (Keyboard)
         [exec] (DE) {setxkbmap de}
@@ -31,5 +37,9 @@
         [exec] (PT) {setxkbmap pt}
         [exec] (RU) {setxkbmap ru}
         [exec] (US) {setxkbmap us}
+    [end]
+    [submenu] (Toolbars)
+        [exec] (Fluxbox) {toggletint2}
+        [exec] (tint2) {toggletint2}
     [end]
 [end]

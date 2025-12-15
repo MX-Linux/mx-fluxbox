@@ -1,14 +1,14 @@
 [begin] (Out of sight) 
-    [exec] (Kill dock            ) { killall wmalauncher               }
-    [exec] (Kill a window        ) { xkill                             }
+    [exec] (Kill dock) { killall wmalauncher               }
+    [exec] (Kill a window) { xkill                             }
     [separator]
-    [exec] (Toggle conky         ) { conkytoggle.sh                    }
-    [exec] (Toggle iDesk         ) { idesktoggle idesk                 }
-    [exec] (Toggle icons         ) { idesktoggle icons                 }
-    [exec] (Toggle autohide dock ) { toggledock }
-    [exec] (Toggle autohide toolbar) {toggletoolbar}
-                [exec] (Toggle autohide panel) {togglepanel}
-    [exec] (Toggle monitors      ) { toggle-mx gkrellm                 }
+    [exec] (Toggle conky) { conkytoggle.sh                    }
+    [exec] (Toggle iDesk) { idesktoggle idesk                 }
+    [exec] (Toggle icons) { idesktoggle icons                 }
+    [exec] (Toggle autohide dock) { toggledock }
+    [exec] (Toggle autohide toolbar) { toggletoolbar}
+    [exec] (Toggle autohide panel) { togglepanel}
+    [exec] (Toggle monitors) { toggle-mx gkrellm                 }
     [separator]
-    [exec] (Disable default dock ) { killall wmalauncher && dfltdck_kill }
+    [exec] (Disable default dock) { killall wmalauncher && dfltdck_kill }
 [end]
