@@ -31,13 +31,13 @@ the default versions of the submenus are located in /usr/share/mxflux/menu
     [exec] (Terminal) {x-terminal-emulator} 
     [separator]
     [submenu] (Appearance)
-    	[include] (~/.fluxbox/submenus/appearance)
+    	[include] (/usr/share/mxflux/menu-translations/appearance_en)
     [end]
     [submenu] (Settings)
-    	[include] (~/.fluxbox/submenus/settings)
+    	[include] /usr/share/mxflux/menu-translations/settings_en)
     [end]
     [submenu] (Out of sight)
-        [include] (~/.fluxbox/submenus/out-of-sight)
+        [include] (/usr/share/mxflux/menu-translations/out-of-sight_en)
     [end]
     [submenu] (Leave)
         [exec] (Refresh) {fluxbox-remote restart; idesktoggle idesk refresh; nitrogen --restore } 
