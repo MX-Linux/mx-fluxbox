@@ -1,7 +1,7 @@
 #!/bin/bash
 #Appfinder Settings
 #Tool to manage appfinder settings
-#Version 2511-1
+#Version 2512-1
 #License: GPL-3.0+
 
 #Changelog 
@@ -304,10 +304,12 @@ WINKEYOLD="$(grep "rofi -show drun" $HOME/.fluxbox/keys )"
 
 	if [ "$WINKEYOLD" = 'Super_L :Exec rofi -show drun' ]; then
 		WINKEYLIST='rofi!appfinder'
-    else
+    elif [ "$WINKEYOLD" = 'Super_L :Exec rofi -show drun -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi' ]; then
         WINKEYLIST='appfinder!rofi'
+    else
+        WINKEYLIST='-'
 	fi
-
+	
 
 #YAD WINDOW
 
@@ -494,18 +496,21 @@ case $ret in
 
     WINKEYNEW="${af_settings[14]}"
     
-    if [ "$WINKEYNEW" = 'rofi' ]; then
-		WINKEYNEW='Super_L :Exec rofi -show drun'
-    else
-        WINKEYNEW='Super_L :Exec rofi -show drun -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi'
-	fi
-	
-	WINKEYNEW=$(echo "${WINKEYNEW}" | sed -e 's/[]$\/"*[\^]/\\&/g' )
-	WINKEYOLD=$(echo "${WINKEYOLD}" | sed -e 's/[]$\/"*[\^]/\\&/g' )
+    if [ "$WINKEYNEW" != '-' ]; then
+    
+        if [ "$WINKEYNEW" = 'rofi' ]; then
+		    WINKEYNEW='Super_L :Exec rofi -show drun'
+        elif [ "$WINKEYNEW" = 'appfinder' ]; then
+            WINKEYNEW='Super_L :Exec rofi -show drun -theme ~/.config/rofi/themes/appfinder/mxfb-appfinder.rasi'
+	    fi
+
+	    WINKEYNEW=$(echo "${WINKEYNEW}" | sed -e 's/[]$\/"*[\^]/\\&/g' )
+	    WINKEYOLD=$(echo "${WINKEYOLD}" | sed -e 's/[]$\/"*[\^]/\\&/g' )
 		
-	if [ "$WINKEYNEW" != "$WINKEYOLD" ]; then
-        sed -i -e "s/${WINKEYOLD}/${WINKEYNEW}/g" $HOME/.fluxbox/keys
-        fluxbox-remote reconfigure
+	    if [ "$WINKEYNEW" != "$WINKEYOLD" ]; then
+            sed -i -e "s/${WINKEYOLD}/${WINKEYNEW}/g" $HOME/.fluxbox/keys
+            fluxbox-remote reconfigure
+        fi
     fi
     
     ;;
