@@ -1,8 +1,12 @@
 mx-fluxbox (25.12.1mx25) mx; urgency=medium
 
   * misc. config fixes
+  * appfinder-settings check commented super key
+  * update submenus 
+  * source english submenus from /usr/share/mxflux
+  * apps file - fix tint2 layer
 
- -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 22 Dec 2025 19:11:46 -0500
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 22 Dec 2025 19:15:12 -0500
 
 mx-fluxbox (25.11.3mx25) mx; urgency=medium
 
