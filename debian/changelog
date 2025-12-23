@@ -1,3 +1,9 @@
+mx-fluxbox (25.12.1mx25) mx; urgency=medium
+
+  * misc. config fixes
+
+ -- Dolphin Oracle <dolphinoracle@gmail.com>  Mon, 22 Dec 2025 19:11:46 -0500
+
 mx-fluxbox (25.11.3mx25) mx; urgency=medium
 
   * more appfinder adjustements
