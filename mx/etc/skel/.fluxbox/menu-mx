@@ -34,7 +34,7 @@ the default versions of the submenus are located in /usr/share/mxflux/menu
     	[include] (/usr/share/mxflux/menu-translations/appearance_en)
     [end]
     [submenu] (Settings)
-    	[include] /usr/share/mxflux/menu-translations/settings_en)
+    	[include] (/usr/share/mxflux/menu-translations/settings_en)
     [end]
     [submenu] (Out of sight)
         [include] (/usr/share/mxflux/menu-translations/out-of-sight_en)
