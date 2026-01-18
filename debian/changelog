@@ -1,3 +1,10 @@
+mx-fluxbox (26.01.1mx25) mx; urgency=medium
+
+  * fix settings submenu path
+  * adjust position and size iDesk icons 
+
+ -- Melber <melber-mx-linux@gmail.com>  Sun, 18 Jan 2026 23:45:00 +0100
+
 mx-fluxbox (25.12.1mx25) mx; urgency=medium
 
   * misc. config fixes
