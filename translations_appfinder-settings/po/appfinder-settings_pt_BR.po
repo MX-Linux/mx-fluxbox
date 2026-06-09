@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# cmenemrs <cmenemrs@gmail.com>, 2023
+# marcelo cripe <marcelocripe@gmail.com>, 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-02 00:21+0200\n"
+"PO-Revision-Date: 2023-07-19 02:33+0000\n"
+"Last-Translator: marcelo cripe <marcelocripe@gmail.com>, 2023\n"
+"Language-Team: Portuguese (Brazil) (https://app.transifex.com/"
+"anticapitalista/teams/10162/pt_BR/)\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
+"1000000 == 0 ? 1 : 2;\n"
+
+#: appfinder-settings:109
+msgid "color-selector"
+msgstr "Selecionar a Cor"
+
+#. YAD WINDOW
+#. buttons
+#: appfinder-settings:317
+msgid "Close"
+msgstr "Fechar "
+
+#: appfinder-settings:318
+msgid "Apply"
+msgstr "Aplicar"
+
+#: appfinder-settings:320
+msgid "Appfinder Settings"
+msgstr "Configurações do App Finder"
+
+#: appfinder-settings:330
+msgid "Theme "
+msgstr "Tema "
+
+#: appfinder-settings:342
+#, fuzzy
+msgid "Highlight Color "
+msgstr "   Cor da Seleção "
+
+#: appfinder-settings:343
+msgid "Restore default highlight color(s) "
+msgstr ""
+
+#: appfinder-settings:345
+msgid "Location "
+msgstr "Localização"
+
+#: appfinder-settings:346
+msgid "X-Offset "
+msgstr "Deslocamento da Coordenada X"
+
+#: appfinder-settings:347
+msgid "Y-Offset "
+msgstr "Deslocamento da Coordenada Y"
+
+#: appfinder-settings:348
+msgid "Width "
+msgstr "Largura "
+
+#: appfinder-settings:349
+msgid "Height "
+msgstr "Altura "
+
+#: appfinder-settings:350
+msgid "Font "
+msgstr "Tipo de Letra"
+
+#: appfinder-settings:352
+msgid "Super Key opens "
+msgstr ""

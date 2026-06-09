@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TEXTDOMAINDIR=/usr/share/locale 
-export TEXTDOMAIN="mx-desktop-menu-l10n"
+export TEXTDOMAIN="mxfb-appfinder-exit"
 
 afeo_refresh="$(gettext 'Restart Fluxbox')"
 afeo_suspend="$(gettext 'Suspend')"

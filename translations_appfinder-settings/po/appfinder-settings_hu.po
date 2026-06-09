@@ -1,0 +1,82 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Kempelen, 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-02 00:21+0200\n"
+"PO-Revision-Date: 2023-07-19 02:33+0000\n"
+"Last-Translator: Kempelen, 2023\n"
+"Language-Team: Hungarian (https://app.transifex.com/anticapitalista/teams/"
+"10162/hu/)\n"
+"Language: hu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: appfinder-settings:109
+msgid "color-selector"
+msgstr "szín-választó"
+
+#. YAD WINDOW
+#. buttons
+#: appfinder-settings:317
+msgid "Close"
+msgstr "Bezárás"
+
+#: appfinder-settings:318
+msgid "Apply"
+msgstr "Alkalmazás"
+
+#: appfinder-settings:320
+msgid "Appfinder Settings"
+msgstr "Appfinder beállítások"
+
+#: appfinder-settings:330
+msgid "Theme "
+msgstr "Téma"
+
+#: appfinder-settings:342
+#, fuzzy
+msgid "Highlight Color "
+msgstr "   Kiemelés színe"
+
+#: appfinder-settings:343
+msgid "Restore default highlight color(s) "
+msgstr ""
+
+#: appfinder-settings:345
+msgid "Location "
+msgstr "Hely"
+
+#: appfinder-settings:346
+msgid "X-Offset "
+msgstr "X-eltolás"
+
+#: appfinder-settings:347
+msgid "Y-Offset "
+msgstr "Y-eltolás"
+
+#: appfinder-settings:348
+msgid "Width "
+msgstr "Szélesség"
+
+#: appfinder-settings:349
+msgid "Height "
+msgstr "Magasság"
+
+#: appfinder-settings:350
+msgid "Font "
+msgstr "Betűtípus"
+
+#: appfinder-settings:352
+msgid "Super Key opens "
+msgstr ""

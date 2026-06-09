@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# cyril cottet <cyrilusber2001@yahoo.fr>, 2023
+# Wallon Wallon, 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-02 00:21+0200\n"
+"PO-Revision-Date: 2023-07-19 02:33+0000\n"
+"Last-Translator: Wallon Wallon, 2023\n"
+"Language-Team: French (https://app.transifex.com/anticapitalista/teams/10162/"
+"fr/)\n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
+"1000000 == 0 ? 1 : 2;\n"
+
+#: appfinder-settings:109
+msgid "color-selector"
+msgstr "sélecteur-couleur"
+
+#. YAD WINDOW
+#. buttons
+#: appfinder-settings:317
+msgid "Close"
+msgstr "Quitter"
+
+#: appfinder-settings:318
+msgid "Apply"
+msgstr "Appliquer"
+
+#: appfinder-settings:320
+msgid "Appfinder Settings"
+msgstr "Paramètres d’Appfinder"
+
+#: appfinder-settings:330
+msgid "Theme "
+msgstr "Thème "
+
+#: appfinder-settings:342
+#, fuzzy
+msgid "Highlight Color "
+msgstr "   Couleur de surbrillance "
+
+#: appfinder-settings:343
+msgid "Restore default highlight color(s) "
+msgstr ""
+
+#: appfinder-settings:345
+msgid "Location "
+msgstr "Emplacement "
+
+#: appfinder-settings:346
+msgid "X-Offset "
+msgstr "X-Offset / X-Décalage "
+
+#: appfinder-settings:347
+msgid "Y-Offset "
+msgstr "Y-Offset / Y-Décalage "
+
+#: appfinder-settings:348
+msgid "Width "
+msgstr "Largeur "
+
+#: appfinder-settings:349
+msgid "Height "
+msgstr "Hauteur "
+
+#: appfinder-settings:350
+msgid "Font "
+msgstr "Police d’écriture "
+
+#: appfinder-settings:352
+msgid "Super Key opens "
+msgstr ""

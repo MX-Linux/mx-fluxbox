@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+# Translators:
+# Vinzenz Vietzke <vinz@vinzv.de>, 2023
+# aer, 2023
+# M B, 2023
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-02 00:21+0200\n"
+"PO-Revision-Date: 2023-07-19 02:33+0000\n"
+"Last-Translator: M B, 2023\n"
+"Language-Team: German (https://app.transifex.com/anticapitalista/teams/10162/"
+"de/)\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: appfinder-settings:109
+msgid "color-selector"
+msgstr "Farbauswahl"
+
+#. YAD WINDOW
+#. buttons
+#: appfinder-settings:317
+msgid "Close"
+msgstr "Schließen"
+
+#: appfinder-settings:318
+msgid "Apply"
+msgstr "Übernehmen"
+
+#: appfinder-settings:320
+msgid "Appfinder Settings"
+msgstr "Appfinder-Einstellungen"
+
+#: appfinder-settings:330
+msgid "Theme "
+msgstr "Thema "
+
+#: appfinder-settings:342
+msgid "Highlight Color "
+msgstr "Hervorhebungsfarbe "
+
+#: appfinder-settings:343
+msgid "Restore default highlight color(s) "
+msgstr "Hervorhebungsfarben wiederherstellen "
+
+#: appfinder-settings:345
+msgid "Location "
+msgstr "Position "
+
+#: appfinder-settings:346
+msgid "X-Offset "
+msgstr "X-Offset "
+
+#: appfinder-settings:347
+msgid "Y-Offset "
+msgstr "Y-Offset "
+
+#: appfinder-settings:348
+msgid "Width "
+msgstr "Breite "
+
+#: appfinder-settings:349
+msgid "Height "
+msgstr "Höhe "
+
+#: appfinder-settings:350
+msgid "Font "
+msgstr "Schriftart "
+
+#: appfinder-settings:352
+msgid "Super Key opens "
+msgstr "Supertaste öffnet "

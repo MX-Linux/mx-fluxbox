@@ -340,7 +340,7 @@ SETTINGS=$(yad --title="$TITLE" --class="$CLASS" --window-icon="$ICONPATH" \
 --field=" ":LBL "|" \
 --field=" ":LBL "|" \
 --field="$(gettext 'Highlight Color ')":CLR "$AF_HILITE" \
---field="Restore default highlight color(s) ":LBL "|" \
+--field="$(gettext 'Restore default highlight color(s) ')":LBL "|" \
 --field=" ":LBL "|" \
 --field="$(gettext 'Location ')":CB "$LOCVALUE!northwest!north!northeast!west!center!east!southwest!south!southeast" \
 --field="$(gettext 'X-Offset ')":NUM  "$XOFFVALUE\!-500..500\!1\!0" \
