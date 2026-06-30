@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[o:anticapitalista:p:antix-development:r:mxfb-appfinder-exit]
+file_filter = po/mxfb-appfinder-exit_<lang>.po
+source_file = mxfb-appfinder-exit.pot
+source_lang = en
+type = po

@@ -1,32 +1,38 @@
-# Icelandic translations for PACKAGE package.
-# Copyright (C) 2026 THE PACKAGE'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2026.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Sveinn í Felli <sv1@fellsnet.is>, 2026
+# anticapitalista <anticapitalista@riseup.net>, 2026
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-30 00:05+0200\n"
-"PO-Revision-Date: 2026-05-30 00:05+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: is\n"
+"PO-Revision-Date: 2026-06-09 23:58+0000\n"
+"Last-Translator: anticapitalista <anticapitalista@riseup.net>, 2026\n"
+"Language-Team: Icelandic (https://app.transifex.com/anticapitalista/teams/10162/is/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: is\n"
+"Plural-Forms: nplurals=2; plural=(n % 10 != 1 || n % 100 == 11);\n"
 
 #: appfinder-exit:7
 msgid "Restart Fluxbox"
-msgstr "Endurræsa Fluxbox"
+msgstr ""
 
 #: appfinder-exit:8
 msgid "Suspend"
-msgstr "Aðhafast"
+msgstr "Setja í bið"
 
 #: appfinder-exit:9
 msgid "Lock"
-msgstr "Læsa"
+msgstr ""
 
 #: appfinder-exit:10
 msgid "Log Out"

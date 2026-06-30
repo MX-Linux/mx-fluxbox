@@ -1,24 +1,30 @@
-# Arabic translations for PACKAGE package.
-# Copyright (C) 2026 THE PACKAGE'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2026.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Michel Massoud <michel_massoud@hotmail.com>, 2026
+# James Bowlin <BitJam@gmail.com>, 2026
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-30 00:05+0200\n"
-"PO-Revision-Date: 2026-05-30 00:05+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: ar\n"
+"PO-Revision-Date: 2026-06-09 23:58+0000\n"
+"Last-Translator: James Bowlin <BitJam@gmail.com>, 2026\n"
+"Language-Team: Arabic (https://app.transifex.com/anticapitalista/teams/10162/ar/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
 
 #: appfinder-exit:7
 msgid "Restart Fluxbox"
-msgstr "إعادة تشغيل Fluxbox"
+msgstr ""
 
 #: appfinder-exit:8
 msgid "Suspend"
@@ -26,16 +32,16 @@ msgstr "تعليق"
 
 #: appfinder-exit:9
 msgid "Lock"
-msgstr "قفل"
+msgstr ""
 
 #: appfinder-exit:10
 msgid "Log Out"
-msgstr "تسجيل الخروج"
+msgstr ""
 
 #: appfinder-exit:11
 msgid "Reboot"
-msgstr "إعادة التشغيل"
+msgstr "إعادة تشغيل"
 
 #: appfinder-exit:12
 msgid "Shutdown"
-msgstr "إيقاف التشغيل"
+msgstr "خروج"

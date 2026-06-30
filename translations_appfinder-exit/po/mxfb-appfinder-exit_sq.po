@@ -1,40 +1,46 @@
-# Albanian translations for PACKAGE package.
-# Copyright (C) 2026 THE PACKAGE'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2026.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# anticapitalista <anticapitalista@riseup.net>, 2026
+# Besnik Bleta <besnik@programeshqip.org>, 2026
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-30 00:05+0200\n"
-"PO-Revision-Date: 2026-05-30 00:05+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: sq\n"
+"PO-Revision-Date: 2026-06-09 23:58+0000\n"
+"Last-Translator: Besnik Bleta <besnik@programeshqip.org>, 2026\n"
+"Language-Team: Albanian (https://app.transifex.com/anticapitalista/teams/10162/sq/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: sq\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: appfinder-exit:7
 msgid "Restart Fluxbox"
-msgstr "Rinis Fluxbox"
+msgstr "Rinise Fluxbox-in"
 
 #: appfinder-exit:8
 msgid "Suspend"
-msgstr "Pezullo"
+msgstr "Pezulloje"
 
 #: appfinder-exit:9
 msgid "Lock"
-msgstr "Kyç"
+msgstr "Kyçe"
 
 #: appfinder-exit:10
 msgid "Log Out"
-msgstr "Çkyçu"
+msgstr "Dilni"
 
 #: appfinder-exit:11
 msgid "Reboot"
-msgstr "Rinis"
+msgstr "Rinise"
 
 #: appfinder-exit:12
 msgid "Shutdown"

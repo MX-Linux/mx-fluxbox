@@ -1,32 +1,37 @@
-# Indonesian translations for PACKAGE package.
-# Copyright (C) 2026 THE PACKAGE'S COPYRIGHT HOLDER
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
-# Automatically generated, 2026.
-#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# autorejecttop, 2026
+# 
+#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-30 00:05+0200\n"
-"PO-Revision-Date: 2026-05-30 00:05+0200\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
-"Language: id\n"
+"PO-Revision-Date: 2026-06-09 23:58+0000\n"
+"Last-Translator: autorejecttop, 2026\n"
+"Language-Team: Indonesian (https://app.transifex.com/anticapitalista/teams/10162/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: id\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
 
 #: appfinder-exit:7
 msgid "Restart Fluxbox"
-msgstr "Mulai Ulang Fluxbox"
+msgstr ""
 
 #: appfinder-exit:8
 msgid "Suspend"
-msgstr "Suspensi"
+msgstr "Suspend"
 
 #: appfinder-exit:9
 msgid "Lock"
-msgstr "Kunci"
+msgstr ""
 
 #: appfinder-exit:10
 msgid "Log Out"
@@ -34,7 +39,7 @@ msgstr "Keluar"
 
 #: appfinder-exit:11
 msgid "Reboot"
-msgstr "Mulai Ulang"
+msgstr "Reboot"
 
 #: appfinder-exit:12
 msgid "Shutdown"

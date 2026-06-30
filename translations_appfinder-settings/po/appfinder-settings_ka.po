@@ -3,13 +3,17 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-18 22:32-0400\n"
+"POT-Creation-Date: 2026-06-02 00:21+0200\n"
 "PO-Revision-Date: 2023-07-19 02:33+0000\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>, 2026\n"
 "Language-Team: Georgian (https://app.transifex.com/anticapitalista/teams/10162/ka/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -17,56 +21,60 @@ msgstr ""
 "Language: ka\n"
 "Plural-Forms: nplurals=2; plural=(n!=1);\n"
 
-#: ../base-mxfb/bin/appfinder-settings:56
+#: appfinder-settings:109
 msgid "color-selector"
-msgstr ""
+msgstr "ფერის ამრჩევი"
 
-#. ######################################
-#. ######################################
 #. YAD WINDOW
-#. ######################################
-#. ######################################
 #. buttons
-#: ../base-mxfb/bin/appfinder-settings:264
+#: appfinder-settings:317
 msgid "Close"
-msgstr ""
+msgstr "დახურვა"
 
-#: ../base-mxfb/bin/appfinder-settings:265
+#: appfinder-settings:318
 msgid "Apply"
-msgstr ""
+msgstr "გადატარება"
 
-#: ../base-mxfb/bin/appfinder-settings:269
+#: appfinder-settings:320
 msgid "Appfinder Settings"
 msgstr ""
 
-#: ../base-mxfb/bin/appfinder-settings:279
+#: appfinder-settings:330
 msgid "Theme "
+msgstr "თემა"
+
+#: appfinder-settings:342
+msgid "Highlight Color "
 msgstr ""
 
-#: ../base-mxfb/bin/appfinder-settings:287
-msgid "   Highlight Color "
+#: appfinder-settings:343
+msgid "Restore default highlight color(s) "
 msgstr ""
 
-#: ../base-mxfb/bin/appfinder-settings:289
+#: appfinder-settings:345
 msgid "Location "
-msgstr ""
+msgstr "მდებარეობა"
 
-#: ../base-mxfb/bin/appfinder-settings:290
+#: appfinder-settings:346
 msgid "X-Offset "
-msgstr ""
+msgstr "X-წანაცვლება"
 
-#: ../base-mxfb/bin/appfinder-settings:291
+#: appfinder-settings:347
 msgid "Y-Offset "
-msgstr ""
+msgstr "Y-წანაცვლება"
 
-#: ../base-mxfb/bin/appfinder-settings:292
+#: appfinder-settings:348
 msgid "Width "
-msgstr ""
+msgstr "სიგანე"
 
-#: ../base-mxfb/bin/appfinder-settings:293
+#: appfinder-settings:349
 msgid "Height "
-msgstr ""
+msgstr "სიმაღლე"
 
-#: ../base-mxfb/bin/appfinder-settings:294
+#: appfinder-settings:350
 msgid "Font "
+msgstr "ფონტი"
+
+#: appfinder-settings:352
+msgid "Super Key opens "
 msgstr ""

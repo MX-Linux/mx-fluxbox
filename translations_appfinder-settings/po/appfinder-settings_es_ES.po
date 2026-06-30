@@ -5,16 +5,16 @@
 # 
 # Translators:
 # Casper, 2023
-# Manuel <senpai99@hotmail.com>, 2023
+# Manuel <senpai99@hotmail.com>, 2026
 # 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-07-18 22:32-0400\n"
+"POT-Creation-Date: 2026-06-02 00:21+0200\n"
 "PO-Revision-Date: 2023-07-19 02:33+0000\n"
-"Last-Translator: Manuel <senpai99@hotmail.com>, 2023\n"
+"Last-Translator: Manuel <senpai99@hotmail.com>, 2026\n"
 "Language-Team: Spanish (Spain) (https://app.transifex.com/anticapitalista/teams/10162/es_ES/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -22,56 +22,60 @@ msgstr ""
 "Language: es_ES\n"
 "Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
-#: ../base-mxfb/bin/appfinder-settings:56
+#: appfinder-settings:109
 msgid "color-selector"
-msgstr "selector-de-color"
+msgstr "selector de color"
 
-#. ######################################
-#. ######################################
 #. YAD WINDOW
-#. ######################################
-#. ######################################
 #. buttons
-#: ../base-mxfb/bin/appfinder-settings:264
+#: appfinder-settings:317
 msgid "Close"
 msgstr "Cerrar"
 
-#: ../base-mxfb/bin/appfinder-settings:265
+#: appfinder-settings:318
 msgid "Apply"
 msgstr "Aplicar"
 
-#: ../base-mxfb/bin/appfinder-settings:269
+#: appfinder-settings:320
 msgid "Appfinder Settings"
 msgstr "Configuración de Appfinder"
 
-#: ../base-mxfb/bin/appfinder-settings:279
+#: appfinder-settings:330
 msgid "Theme "
 msgstr "Tema"
 
-#: ../base-mxfb/bin/appfinder-settings:287
-msgid "   Highlight Color "
+#: appfinder-settings:342
+msgid "Highlight Color "
 msgstr "Color de resaltado"
 
-#: ../base-mxfb/bin/appfinder-settings:289
+#: appfinder-settings:343
+msgid "Restore default highlight color(s) "
+msgstr "Restablecer los colores de resaltado por defecto "
+
+#: appfinder-settings:345
 msgid "Location "
 msgstr "Ubicación"
 
-#: ../base-mxfb/bin/appfinder-settings:290
+#: appfinder-settings:346
 msgid "X-Offset "
 msgstr "Desplazamiento-X"
 
-#: ../base-mxfb/bin/appfinder-settings:291
+#: appfinder-settings:347
 msgid "Y-Offset "
 msgstr "Desplazamiento-Y"
 
-#: ../base-mxfb/bin/appfinder-settings:292
+#: appfinder-settings:348
 msgid "Width "
 msgstr "Ancho"
 
-#: ../base-mxfb/bin/appfinder-settings:293
+#: appfinder-settings:349
 msgid "Height "
 msgstr "Alto"
 
-#: ../base-mxfb/bin/appfinder-settings:294
+#: appfinder-settings:350
 msgid "Font "
 msgstr "Fuente"
+
+#: appfinder-settings:352
+msgid "Super Key opens "
+msgstr "Abrir con tecla Super"

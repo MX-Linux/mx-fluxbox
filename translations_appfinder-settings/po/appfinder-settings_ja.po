@@ -2,10 +2,11 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # 🎈 BALLOON | FU-SEN, 2023
-#
+# green <usergreen@users.osdn.me>, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -13,18 +14,17 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-02 00:21+0200\n"
 "PO-Revision-Date: 2023-07-19 02:33+0000\n"
-"Last-Translator: 🎈 BALLOON | FU-SEN, 2023\n"
-"Language-Team: Japanese (https://app.transifex.com/anticapitalista/teams/"
-"10162/ja/)\n"
-"Language: ja\n"
+"Last-Translator: green <usergreen@users.osdn.me>, 2023\n"
+"Language-Team: Japanese (https://app.transifex.com/anticapitalista/teams/10162/ja/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: ja\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 
 #: appfinder-settings:109
 msgid "color-selector"
-msgstr ""
+msgstr "色選択"
 
 #. YAD WINDOW
 #. buttons
@@ -38,11 +38,11 @@ msgstr "適用"
 
 #: appfinder-settings:320
 msgid "Appfinder Settings"
-msgstr ""
+msgstr "アプリ検索の設定"
 
 #: appfinder-settings:330
 msgid "Theme "
-msgstr ""
+msgstr "テーマ"
 
 #: appfinder-settings:342
 msgid "Highlight Color "
@@ -54,27 +54,27 @@ msgstr ""
 
 #: appfinder-settings:345
 msgid "Location "
-msgstr ""
+msgstr "場所"
 
 #: appfinder-settings:346
 msgid "X-Offset "
-msgstr ""
+msgstr "X-オフセット"
 
 #: appfinder-settings:347
 msgid "Y-Offset "
-msgstr ""
+msgstr "Y-オフセット"
 
 #: appfinder-settings:348
 msgid "Width "
-msgstr ""
+msgstr "幅"
 
 #: appfinder-settings:349
 msgid "Height "
-msgstr ""
+msgstr "高さ"
 
 #: appfinder-settings:350
 msgid "Font "
-msgstr ""
+msgstr "フォント"
 
 #: appfinder-settings:352
 msgid "Super Key opens "

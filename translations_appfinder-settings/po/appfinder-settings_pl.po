@@ -2,11 +2,12 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # MX Linux Polska <mxlinuxpl@gmail.com>, 2023
 # Krzesimir Chrząstowicz <golemiko@gmail.com>, 2023
-#
+# Marek Adamski, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -14,16 +15,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-02 00:21+0200\n"
 "PO-Revision-Date: 2023-07-19 02:33+0000\n"
-"Last-Translator: Krzesimir Chrząstowicz <golemiko@gmail.com>, 2023\n"
-"Language-Team: Polish (https://app.transifex.com/anticapitalista/teams/10162/"
-"pl/)\n"
-"Language: pl\n"
+"Last-Translator: Marek Adamski, 2026\n"
+"Language-Team: Polish (https://app.transifex.com/anticapitalista/teams/10162/pl/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && "
-"(n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && "
-"n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
+"Language: pl\n"
+"Plural-Forms: nplurals=4; plural=(n==1 ? 0 : (n%10>=2 && n%10<=4) && (n%100<12 || n%100>14) ? 1 : n!=1 && (n%10>=0 && n%10<=1) || (n%10>=5 && n%10<=9) || (n%100>=12 && n%100<=14) ? 2 : 3);\n"
 
 #: appfinder-settings:109
 msgid "color-selector"
@@ -41,20 +39,19 @@ msgstr "Zastosuj"
 
 #: appfinder-settings:320
 msgid "Appfinder Settings"
-msgstr "Ustawienia Wyszukiwarki Aplikacji"
+msgstr "Ustawienia wyszukiwarki programów"
 
 #: appfinder-settings:330
 msgid "Theme "
 msgstr "Motyw"
 
 #: appfinder-settings:342
-#, fuzzy
 msgid "Highlight Color "
-msgstr "   Kolor podświetlenia"
+msgstr "Kolor wyróżnienia"
 
 #: appfinder-settings:343
 msgid "Restore default highlight color(s) "
-msgstr ""
+msgstr "Przywróć domyślne kolory wyróżnienia"
 
 #: appfinder-settings:345
 msgid "Location "
@@ -82,4 +79,4 @@ msgstr "Czcionka"
 
 #: appfinder-settings:352
 msgid "Super Key opens "
-msgstr ""
+msgstr "Klawisz Super otwiera "

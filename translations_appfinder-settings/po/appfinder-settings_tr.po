@@ -2,11 +2,11 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # mahmut özcan <mahmutozcan@protonmail.com>, 2023
-# Mehmet Akif 9oglu, 2023
-#
+# Mehmet Akif Dokuzoğlu, 2023
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -14,13 +14,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-02 00:21+0200\n"
 "PO-Revision-Date: 2023-07-19 02:33+0000\n"
-"Last-Translator: Mehmet Akif 9oglu, 2023\n"
-"Language-Team: Turkish (https://app.transifex.com/anticapitalista/teams/"
-"10162/tr/)\n"
-"Language: tr\n"
+"Last-Translator: Mehmet Akif Dokuzoğlu, 2023\n"
+"Language-Team: Turkish (https://app.transifex.com/anticapitalista/teams/10162/tr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: tr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: appfinder-settings:109
@@ -46,9 +45,8 @@ msgid "Theme "
 msgstr "Tema"
 
 #: appfinder-settings:342
-#, fuzzy
 msgid "Highlight Color "
-msgstr "   Vurgu Rengi"
+msgstr ""
 
 #: appfinder-settings:343
 msgid "Restore default highlight color(s) "

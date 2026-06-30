@@ -2,11 +2,12 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # cmenemrs <cmenemrs@gmail.com>, 2023
 # marcelo cripe <marcelocripe@gmail.com>, 2023
-#
+# Nicolas Plim, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -14,15 +15,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-02 00:21+0200\n"
 "PO-Revision-Date: 2023-07-19 02:33+0000\n"
-"Last-Translator: marcelo cripe <marcelocripe@gmail.com>, 2023\n"
-"Language-Team: Portuguese (Brazil) (https://app.transifex.com/"
-"anticapitalista/teams/10162/pt_BR/)\n"
-"Language: pt_BR\n"
+"Last-Translator: Nicolas Plim, 2026\n"
+"Language-Team: Portuguese (Brazil) (https://app.transifex.com/anticapitalista/teams/10162/pt_BR/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
-"1000000 == 0 ? 1 : 2;\n"
+"Language: pt_BR\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: appfinder-settings:109
 msgid "color-selector"
@@ -47,13 +46,12 @@ msgid "Theme "
 msgstr "Tema "
 
 #: appfinder-settings:342
-#, fuzzy
 msgid "Highlight Color "
-msgstr "   Cor da Seleção "
+msgstr "Cor de Destaque"
 
 #: appfinder-settings:343
 msgid "Restore default highlight color(s) "
-msgstr ""
+msgstr "Restaurar para a cor de destaque padrão"
 
 #: appfinder-settings:345
 msgid "Location "
@@ -81,4 +79,4 @@ msgstr "Tipo de Letra"
 
 #: appfinder-settings:352
 msgid "Super Key opens "
-msgstr ""
+msgstr "Abre com a Tecla Super"

@@ -2,11 +2,11 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 # Translators:
 # cyril cottet <cyrilusber2001@yahoo.fr>, 2023
-# Wallon Wallon, 2023
-#
+# Wallon Wallon, 2026
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -14,15 +14,13 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-06-02 00:21+0200\n"
 "PO-Revision-Date: 2023-07-19 02:33+0000\n"
-"Last-Translator: Wallon Wallon, 2023\n"
-"Language-Team: French (https://app.transifex.com/anticapitalista/teams/10162/"
-"fr/)\n"
-"Language: fr\n"
+"Last-Translator: Wallon Wallon, 2026\n"
+"Language-Team: French (https://app.transifex.com/anticapitalista/teams/10162/fr/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % "
-"1000000 == 0 ? 1 : 2;\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
 
 #: appfinder-settings:109
 msgid "color-selector"
@@ -47,13 +45,12 @@ msgid "Theme "
 msgstr "Thème "
 
 #: appfinder-settings:342
-#, fuzzy
 msgid "Highlight Color "
-msgstr "   Couleur de surbrillance "
+msgstr "Couleur de surbrillance "
 
 #: appfinder-settings:343
 msgid "Restore default highlight color(s) "
-msgstr ""
+msgstr "Restaurer la couleur de surbrillance par défaut "
 
 #: appfinder-settings:345
 msgid "Location "
@@ -81,4 +78,4 @@ msgstr "Police d’écriture "
 
 #: appfinder-settings:352
 msgid "Super Key opens "
-msgstr ""
+msgstr "La touche Super (logo Windows) ouvre "
