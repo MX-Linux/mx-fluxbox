@@ -1,3 +1,9 @@
+mx-fluxbox (26.06.1mx25) mx; urgency=medium
+
+  * update translations for appfinder & appfinder-settings 
+
+ -- Melber <melber-mx-linux@gmail.com>  Sun, 30 Jun 2026 23:30:00 +0100
+ 
 mx-fluxbox (26.01.1mx25) mx; urgency=medium
 
   * fix settings submenu path
